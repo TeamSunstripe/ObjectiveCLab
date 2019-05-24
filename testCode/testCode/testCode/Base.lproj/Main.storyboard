@@ -26,11 +26,21 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3L3-EN-Y4x">
-                                <rect key="frame" x="16" y="583" width="343" height="64"/>
+                                <rect key="frame" x="16" y="583" width="165" height="64"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <state key="normal" title="Battery"/>
                                 <connections>
                                     <segue destination="dYV-BI-MVt" kind="popoverPresentation" popoverAnchorView="3L3-EN-Y4x" id="stJ-HS-Nh5">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZGR-G4-WkA">
+                                <rect key="frame" x="189" y="583" width="170" height="64"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <state key="normal" title="withAnimation"/>
+                                <connections>
+                                    <segue destination="8bU-wP-p2X" kind="popoverPresentation" popoverAnchorView="ZGR-G4-WkA" id="H5L-14-uQ6">
                                         <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
                                     </segue>
                                 </connections>
@@ -128,7 +138,52 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5wG-LA-3BM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="125.59999999999999" y="868.51574212893559"/>
+            <point key="canvasLocation" x="-234" y="904"/>
+        </scene>
+        <!--Battery Animation View Controller-->
+        <scene sceneID="4U9-25-LT0">
+            <objects>
+                <viewController id="8bU-wP-p2X" customClass="BatteryAnimationViewController" customModule="testCode" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ib6-7y-kXh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhi-02-yeJ">
+                                <rect key="frame" x="0.0" y="275" width="375" height="69"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eoz-GF-s0W">
+                                <rect key="frame" x="16" y="617" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <state key="normal" title="Close"/>
+                                <connections>
+                                    <action selector="tapedCloseButton:" destination="8bU-wP-p2X" eventType="touchUpInside" id="A6R-RJ-bIH"/>
+                                    <action selector="tapedCloseButton:" destination="p9h-xV-k3h" eventType="touchUpInside" id="UaK-5i-U75"/>
+                                    <action selector="tapedCloseButton:" destination="dYV-BI-MVt" eventType="touchUpInside" id="tO5-ak-Q98"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TXd-cX-BBv">
+                                <rect key="frame" x="0.0" y="195" width="375" height="72"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="FM7-fn-ybi"/>
+                    </view>
+                    <connections>
+                        <outlet property="labelBatteryLevel" destination="TXd-cX-BBv" id="s5m-0T-Mi3"/>
+                        <outlet property="labelBatteryStatus" destination="bhi-02-yeJ" id="eTi-x8-Umu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RCC-bJ-RPN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="494" y="905"/>
         </scene>
     </scenes>
 </document>

@@ -112,7 +112,7 @@ extension BatteryViewController {
  */
 extension BatteryViewController {
     /// バッテリー残量の変化に対する処理
-    func displayBatteryLevel() {
+    @objc func displayBatteryLevel() {
         // バッテリーのモニタリングをenableにする
         UIDevice.current.isBatteryMonitoringEnabled = true
         
@@ -128,7 +128,7 @@ extension BatteryViewController {
     }
     
     /// バッテリーの給電状況の変化に対する処理
-    func displayBatteryState() {
+    @objc func displayBatteryState() {
         // Battery Statusの初期値
         var state:String = "バッテリーステータス: "
         
