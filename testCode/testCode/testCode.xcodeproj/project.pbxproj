@@ -16,6 +16,13 @@
 		A4EBD172228C0EC8006A193A /* testCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EBD171228C0EC8006A193A /* testCodeTests.swift */; };
 		A4EBD17D228C0EC8006A193A /* testCodeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EBD17C228C0EC8006A193A /* testCodeUITests.swift */; };
 		A4EBD18B228C1881006A193A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EBD18A228C1881006A193A /* SecondViewController.swift */; };
+		F65F830A22977B7B00FCBBED /* ParsonalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65F830922977B7B00FCBBED /* ParsonalData.swift */; };
+		F65F830C22977F0C00FCBBED /* ParsonalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65F830B22977F0C00FCBBED /* ParsonalModel.swift */; };
+		F65F8311229781D700FCBBED /* ThingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65F8310229781D700FCBBED /* ThingModel.swift */; };
+		F65F83132297820000FCBBED /* ThingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65F83122297820000FCBBED /* ThingData.swift */; };
+		F65F831822978D5300FCBBED /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65F831722978D5300FCBBED /* Animal.swift */; };
+		F65F831A229793D800FCBBED /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65F8319229793D800FCBBED /* Cat.swift */; };
+		F65F831C2297ADAA00FCBBED /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65F831B2297ADAA00FCBBED /* Dog.swift */; };
 		F6944C352294E9E900250C73 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6944C342294E9E900250C73 /* UserModel.swift */; };
 		F6944C382294EA8300250C73 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6944C372294EA8300250C73 /* UserData.swift */; };
 		F6944C3A229504CA00250C73 /* BatteryViewController+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6944C39229504CA00250C73 /* BatteryViewController+Animation.swift */; };
@@ -54,6 +61,13 @@
 		A4EBD17C228C0EC8006A193A /* testCodeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testCodeUITests.swift; sourceTree = "<group>"; };
 		A4EBD17E228C0EC8006A193A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4EBD18A228C1881006A193A /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		F65F830922977B7B00FCBBED /* ParsonalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsonalData.swift; sourceTree = "<group>"; };
+		F65F830B22977F0C00FCBBED /* ParsonalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsonalModel.swift; sourceTree = "<group>"; };
+		F65F8310229781D700FCBBED /* ThingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThingModel.swift; sourceTree = "<group>"; };
+		F65F83122297820000FCBBED /* ThingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThingData.swift; sourceTree = "<group>"; };
+		F65F831722978D5300FCBBED /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		F65F8319229793D800FCBBED /* Cat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
+		F65F831B2297ADAA00FCBBED /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
 		F6944C342294E9E900250C73 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		F6944C372294EA8300250C73 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		F6944C39229504CA00250C73 /* BatteryViewController+Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BatteryViewController+Animation.swift"; sourceTree = "<group>"; };
@@ -130,6 +144,7 @@
 				A462CC272293E772001D4BEE /* Managers */,
 				F6944C312294E98B00250C73 /* User */,
 				F6944C332294E9C400250C73 /* Parsonal */,
+				F65F830D2297815A00FCBBED /* Things */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -188,6 +203,74 @@
 			path = testCodeUITests;
 			sourceTree = "<group>";
 		};
+		F65F830722977B4E00FCBBED /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F65F830922977B7B00FCBBED /* ParsonalData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		F65F830822977B5800FCBBED /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F65F830B22977F0C00FCBBED /* ParsonalModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F65F830D2297815A00FCBBED /* Things */ = {
+			isa = PBXGroup;
+			children = (
+				F65F831422978CF100FCBBED /* Animals */,
+				F65F830E229781B200FCBBED /* Data */,
+				F65F830F229781BB00FCBBED /* Models */,
+			);
+			path = Things;
+			sourceTree = "<group>";
+		};
+		F65F830E229781B200FCBBED /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F65F83122297820000FCBBED /* ThingData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		F65F830F229781BB00FCBBED /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F65F8310229781D700FCBBED /* ThingModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F65F831422978CF100FCBBED /* Animals */ = {
+			isa = PBXGroup;
+			children = (
+				F65F831722978D5300FCBBED /* Animal.swift */,
+				F65F831522978D1500FCBBED /* Data */,
+				F65F831622978D1E00FCBBED /* Models */,
+				F65F8319229793D800FCBBED /* Cat.swift */,
+				F65F831B2297ADAA00FCBBED /* Dog.swift */,
+			);
+			path = Animals;
+			sourceTree = "<group>";
+		};
+		F65F831522978D1500FCBBED /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		F65F831622978D1E00FCBBED /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		F6944C312294E98B00250C73 /* User */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +291,8 @@
 		F6944C332294E9C400250C73 /* Parsonal */ = {
 			isa = PBXGroup;
 			children = (
+				F65F830722977B4E00FCBBED /* Data */,
+				F65F830822977B5800FCBBED /* Models */,
 			);
 			path = Parsonal;
 			sourceTree = "<group>";
@@ -351,13 +436,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F65F8311229781D700FCBBED /* ThingModel.swift in Sources */,
 				F6944C382294EA8300250C73 /* UserData.swift in Sources */,
 				A4EBD18B228C1881006A193A /* SecondViewController.swift in Sources */,
 				A49EE9182293E6D100A612DD /* BatteryViewController.swift in Sources */,
 				F6944C3A229504CA00250C73 /* BatteryViewController+Animation.swift in Sources */,
+				F65F831822978D5300FCBBED /* Animal.swift in Sources */,
+				F65F831A229793D800FCBBED /* Cat.swift in Sources */,
 				A4EBD15F228C0EC2006A193A /* ViewController.swift in Sources */,
+				F65F831C2297ADAA00FCBBED /* Dog.swift in Sources */,
 				F6944C352294E9E900250C73 /* UserModel.swift in Sources */,
+				F65F830C22977F0C00FCBBED /* ParsonalModel.swift in Sources */,
 				A4EBD15D228C0EC2006A193A /* AppDelegate.swift in Sources */,
+				F65F83132297820000FCBBED /* ThingData.swift in Sources */,
+				F65F830A22977B7B00FCBBED /* ParsonalData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

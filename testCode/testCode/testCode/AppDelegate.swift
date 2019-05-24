@@ -15,6 +15,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     #if swift(>=4.2)
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        let animalCat:Cat = Cat(thing: ["name":"猫","mew":"ミャー","food":"キャットフード"])
+        animalCat.setMew(mew: "チャオ")
+        animalCat.setFood(food: "チャオチュール")
+        animalCat.purr()
+        animalCat.eat()
+        
+        let animalDog :Dog = Dog(thing: ["name":"犬","bowwow":"わんわん","food":"ドックフード"])
+        animalDog.setBowwow(bowwow: "うぅ〜わんわんわん♩")
+        animalDog.bark()
+        animalDog.eat()
+        animalDog.die()
     return true
     }
     #else
