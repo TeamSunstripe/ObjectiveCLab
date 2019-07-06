@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5748C37E22CFACE50009981A /* LaunchScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5748C37D22CFACE50009981A /* LaunchScreenViewController.m */; };
 		F65D218D22B9CD84005E37CA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F65D218C22B9CD84005E37CA /* AppDelegate.m */; };
-		F65D219022B9CD84005E37CA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F65D218F22B9CD84005E37CA /* ViewController.m */; };
+		F65D219022B9CD84005E37CA /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F65D218F22B9CD84005E37CA /* MainViewController.m */; };
 		F65D219322B9CD84005E37CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F65D219122B9CD84005E37CA /* Main.storyboard */; };
 		F65D219622B9CD84005E37CA /* ObjectiveCLab.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F65D219422B9CD84005E37CA /* ObjectiveCLab.xcdatamodeld */; };
 		F65D219822B9CD87005E37CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F65D219722B9CD87005E37CA /* Assets.xcassets */; };
@@ -36,11 +37,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5748C37C22CFACE50009981A /* LaunchScreenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchScreenViewController.h; sourceTree = "<group>"; };
+		5748C37D22CFACE50009981A /* LaunchScreenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchScreenViewController.m; sourceTree = "<group>"; };
 		F65D218822B9CD84005E37CA /* ObjectiveCLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectiveCLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F65D218B22B9CD84005E37CA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F65D218C22B9CD84005E37CA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F65D218E22B9CD84005E37CA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F65D218F22B9CD84005E37CA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F65D218E22B9CD84005E37CA /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		F65D218F22B9CD84005E37CA /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		F65D219222B9CD84005E37CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F65D219522B9CD84005E37CA /* ObjectiveCLab.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ObjectiveCLab.xcdatamodel; sourceTree = "<group>"; };
 		F65D219722B9CD87005E37CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -80,6 +83,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5748C37822CFAB7A0009981A /* SS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SS;
+			sourceTree = "<group>";
+		};
+		5748C37922CFABAB0009981A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				5748C37A22CFABB20009981A /* App */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		5748C37A22CFABB20009981A /* App */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		5748C37B22CFABCB0009981A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F65D218B22B9CD84005E37CA /* AppDelegate.h */,
+				F65D218C22B9CD84005E37CA /* AppDelegate.m */,
+				F65D219922B9CD87005E37CA /* LaunchScreen.storyboard */,
+				5748C37C22CFACE50009981A /* LaunchScreenViewController.h */,
+				5748C37D22CFACE50009981A /* LaunchScreenViewController.m */,
+				F65D219D22B9CD87005E37CA /* main.m */,
+				F65D219122B9CD84005E37CA /* Main.storyboard */,
+				F65D218E22B9CD84005E37CA /* MainViewController.h */,
+				F65D218F22B9CD84005E37CA /* MainViewController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		F65D217F22B9CD84005E37CA = {
 			isa = PBXGroup;
 			children = (
@@ -103,17 +144,12 @@
 		F65D218A22B9CD84005E37CA /* ObjectiveCLab */ = {
 			isa = PBXGroup;
 			children = (
-				F65D21C022B9CE48005E37CA /* Base */,
-				F65D218B22B9CD84005E37CA /* AppDelegate.h */,
-				F65D218C22B9CD84005E37CA /* AppDelegate.m */,
-				F65D218E22B9CD84005E37CA /* ViewController.h */,
-				F65D218F22B9CD84005E37CA /* ViewController.m */,
-				F65D219122B9CD84005E37CA /* Main.storyboard */,
 				F65D219722B9CD87005E37CA /* Assets.xcassets */,
-				F65D219922B9CD87005E37CA /* LaunchScreen.storyboard */,
+				5748C37922CFABAB0009981A /* Base */,
 				F65D219C22B9CD87005E37CA /* Info.plist */,
-				F65D219D22B9CD87005E37CA /* main.m */,
+				5748C37B22CFABCB0009981A /* Main */,
 				F65D219422B9CD84005E37CA /* ObjectiveCLab.xcdatamodeld */,
+				5748C37822CFAB7A0009981A /* SS */,
 			);
 			path = ObjectiveCLab;
 			sourceTree = "<group>";
@@ -134,21 +170,6 @@
 				F65D21B422B9CD87005E37CA /* Info.plist */,
 			);
 			path = ObjectiveCLabUITests;
-			sourceTree = "<group>";
-		};
-		F65D21C022B9CE48005E37CA /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				F65D21C122B9CE52005E37CA /* App */,
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
-		F65D21C122B9CE52005E37CA /* App */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,7 +302,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F65D219022B9CD84005E37CA /* ViewController.m in Sources */,
+				5748C37E22CFACE50009981A /* LaunchScreenViewController.m in Sources */,
+				F65D219022B9CD84005E37CA /* MainViewController.m in Sources */,
 				F65D218D22B9CD84005E37CA /* AppDelegate.m in Sources */,
 				F65D219E22B9CD87005E37CA /* main.m in Sources */,
 				F65D219622B9CD84005E37CA /* ObjectiveCLab.xcdatamodeld in Sources */,
