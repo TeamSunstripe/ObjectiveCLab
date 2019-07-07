@@ -5,12 +5,77 @@
         <title>サンストライプ - プログラミング開発チーム - Objective-C Lab</title>
         <style>
         /* デザイン切り分け */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #header_nav_menu_ul {
+            background-color: #444;	
+            padding: 3px;	
+        }
+        li.headerMenuList {
+            display: inline; 	
+            margin-right: 1em;
+        } 
+        li.headerMenuList a { 
+            font-family: "Trebuchet MS", sans-serif; 
+            text-decoration: none;
+            color: #fff; 	 
+        }
+        /*
+        :link擬似クラス	未訪問リンクのスタイルを指定します。
+        */
+        li.headerMenuList a:link { 
+            border-bottom: dotted 1px #fff;	 
+        }
+        /*
+        :hover擬似クラス	ユーザーの操作で要素にカーソルなどが乗った際のスタイルを指定します。 a:hoverでは“カーソルは乗っているがクリックはされていない状態”です。
+        */
+        li.headerMenuList a:hover { 
+            border-bottom: dotted 1px #fff;	 
+        }
+        /*
+        :visited擬似クラス	訪問済みリンクのスタイルを指定します。
+        */
+        .headerMenuList a:visited { 
+            border-bottom: dotted 1px #fff;	 
+        }
+        /*
+        :active擬似クラス	ユーザーの操作で要素がアクティブになった際のスタイルを指定します。 a:activeでは“クリックされてから離されるまでの状態”です。
+        */
+        li.headerMenuList a:active { 
+            border-bottom: dotted 1px #fff;	 
+        }
+        li.headerMenuList a.visited { 
+            border-bottom: dotted 1px #fff;	 
+        }
         </style>
         <script>
         /* JavaScript切り分け */
         </script>
     </head>
     <body>
+
+    <header><!-- header start //-->
+                
+            <nav id="header_nav"><!-- nav start -->
+
+                <menu id="header_nav_menu"><!-- menu start -->
+
+                    <ul id="header_nav_menu_ul"><!-- ul start -->
+                        <li class="headerMenuList"><a class="baseMenu" href="http://sunstripe-main.jp/">HOME</a></li>
+                        <li class="headerMenuList"><a class="baseMenu" href="http://sunstripe.main.jp/Objective-C/">素敵曜日 - Git Master</a></li>
+                        <li class="headerMenuList"><a class="baseMenu" href="./basic.html">basic</a></li>
+                        <li class="headerMenuList"><a class="baseMenu" href="./expansion.html">expansion</a></li>
+                        <li class="headerMenuList"><a class="baseMenu" href="./reference.html">reference</a></li>
+                    </ul><!-- ul start -->
+
+                </menu><!-- menu start -->
+
+            </nav><!-- nav end -->
+
+    </header><!-- header end //-->
+
         <footer>
             <a class="main_menu" href="http://sunstripe.main.jp/">HOME</a> > <a class="main_menu" href="./index.html">素敵曜日 - Design Lab</a> > <a class="main_menu" href="./reference.html">reference</a> > <a class="main_menu" href="./help.html">HELP</a>
             <br />

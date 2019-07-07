@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MainViewController.h
 //  ObjectiveCLab
 //
 //  Created by Ohshima You on 2019/06/19.
@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ViewController : UIViewController
+@interface MainViewController : UIViewController
 
 
 @end
