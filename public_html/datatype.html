@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ja" target="_blank">
+    <head>
+        <!-- meta name="robots" content="noindex, nofollow" /-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=10.0,user-scalable=yes" />
+        <meta charset="UTF-8"/>
+        <title>素敵曜日 - Objective-C Lab - データ型(detatype)</title>
+        <link rel="stylesheet" type="text/css" href="./css/styles.css"/>
+        <style>
+        /* デザイン切り分け */
+        </style>
+        <script>
+        /* JavaScript切り分け */
+        </script>
+    </head>
+    <body>
+
+            <header><!-- header start //-->
+                
+                <nav id="header_nav"><!-- nav start -->
+    
+                    <menu id="header_nav_menu"><!-- menu start -->
+    
+                        <ul id="header_nav_menu_ul"><!-- ul start -->
+                            <li class="headerMenuList">
+                                <a class="baseMenu" href="http://sunstripe-main.jp/">
+                                    サンストライプ - HOME
+                                </a>
+                            </li>
+                            <li class="headerMenuList">
+                                <a class="baseMenu" href="http://sunstripe-main.jp/#programing">
+                                    プログラミング開発チーム
+                                </a>
+                            </li>
+                            <li class="headerMenuList">
+                                <a class="baseMenu" href="http://sunstripe.main.jp/ObjectiveCLab/">
+                                    素敵曜日 - Objective-C Lab
+                                </a>
+                            </li>
+                            <li class="headerMenuList">
+                                <a class="baseMenu" href="./basic.html">
+                                    basic
+                                </a>
+                            </li>
+                            <li class="headerMenuList">
+                                <a class="baseMenu" href="./expansion.html">
+                                    expansion
+                                </a></li>
+                            <li class="headerMenuList">
+                                <a class="baseMenu" href="./reference.html">
+                                    reference
+                                </a>
+                            </li>
+                        </ul><!-- ul start -->
+    
+                    </menu><!-- menu start -->
+    
+                </nav><!-- nav end -->
+    
+                <a href="./index.html"><h3>プログラミング開発チーム - サンストライプ - Objective-C Lab</h3></a>
+                
+        </header><!-- header end //-->
+
+    <main id="main">
+
+            <h1>Objective-C基礎知識</h1>
+            <p>
+                Objective-Cの基礎知識（データ型）について学んでいきます。
+            </p>
+
+            <nav>
+                    <a href="./index.html">Objective-C Lab</a>
+                    <a href="./basic.html">基礎編</a>
+                    <a href="./basicStart.html">基礎知識(start)</a>
+                    <a class="visited" href="./datatype.html#basic">データ型（datatype）</a>
+                    <a href="./fanction.html#basic">関数（fanction）</a>
+                    <a href="./syntax.html#basic">基本構文（syntax）</a>
+            </nav>
+        <p>
+                ここでは、Objective-Cでプログラミングをする上での基礎知識をまとめてみました。
+                <br />
+                （Objective-C言語は基本がC言語なのでCを知っている方にとっては問題ないかと思います。）
+                <br />
+                <h3>チュートリアル</h3>
+        </p>
+
+        <h1>Objective-C／データ型</h1>
+        <p>
+            ここでは、Objective-Cの型についてみてみましょう。
+        </p>
+        <section>
+                
+                <h2>基本データ型</h2>
+                <p>
+                    Objective-Cの基本データ型には以下のような型があります。
+                </p>
+        </section>
+
+        <section>                                    
+            <h2>Objective-Cの基本データ型 について</h2>
+            <p>
+                ここでは、Objective-Cで基本データの基礎知識をまとめてみました。
+            </p>
+                <table>
+                        <caption>
+                                <strong>
+                                    【Objective-Cの基本データ型】
+                                </strong>
+                        </caption>
+
+                        <thead>
+                        <tr>
+                            <th>
+                                型
+                            </th>
+                            <th style="width: 80%;">
+                                <details>
+                                    <summary>
+                                        表題(表題をタップして説明/解説表示)
+                                    </summary>
+                                    <p>
+                                        説明/解説                      
+                                    </p>
+                                </details>
+                            </th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <th>
+                                    short (signed short)
+                                </th>
+                                <td colspan="2">
+                                    <details>
+                                    <summary>
+                                            int型よりも小さな数値（整数、ゼロ、負数）を扱う型
+                                    </summary>
+                                    <p>                                        
+                                        （サイズはプラットフォームに依存します。）
+                                        <br />
+                                        （例）
+                                        </p>
+<pre class="code">
+short a = -5;
+short a[] = {10, 0, -30};
+</pre>
+                                    </details>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th>
+                                    unsigned short
+                                </th>
+                                <td colspan="2">
+                                    <details>
+                                    <summary>
+                                            int型よりも小さな数値（整数、ゼロ）を扱う型
+                                    </summary>
+                                    <p>                                        
+                                        （サイズはプラットフォームに依存します。）
+                                        <br />
+                                        （例）
+                                        </p>
+<pre class="code">
+unsigned short a = 100;
+unsigned short a[] = {0, 1, 2};        
+</pre>
+                                    </details>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <th>
+                                    int (signed int)                                        
+                                </th>
+                                <td colspan="2">
+                                    <details>
+                                    <summary>
+                                            数値（整数、ゼロ、負数）を扱う型
+                                    </summary>
+                                    <p>                                        
+                                        <br />
+                                        （例）
+                                        </p>
+<pre class="code">
+int a = -5;
+int a[] = {10, 0, -30};
+</pre>
+                                    </details>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th>
+                                        unsigned (unsigned int)	                                       
+                                </th>
+                                <td colspan="2">
+                                    <details>
+                                    <summary>
+                                            数値（整数、ゼロ）を扱う型
+                                    </summary>
+                                    <p>                                        
+                                        <br />
+                                        （例）
+                                        </p>
+<pre class="code">
+unsigned a = 100;
+unsigned a[] = {0, 1, 2};
+</pre>
+                                    </details>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th>
+                                    float
+                                        
+                                </th>
+                                <td colspan="2">
+                                    <details>
+                                    <summary>
+                                            小数点を持つ数値を扱うことの出来る型
+                                    </summary>
+                                    <p>                                        
+                                        <br />
+                                        （例）
+                                        </p>
+<pre class="code">
+float a = 123.45f;
+</pre>
+                                    </details>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th>
+                                    double
+                                </th>
+                                <td colspan="2">
+                                    <details>
+                                    <summary>
+                                            floatよりも大きな領域を持つ浮動小数点型
+                                    </summary>
+                                    <p>                                        
+                                        <br />
+                                        （例）
+                                        </p>
+<pre class="code">
+double a = 123.45;  
+</pre>
+                                    </details>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th>
+                                    char
+                                </th>
+                                <td colspan="2">
+                                    <details>
+                                    <summary>
+                                            1文字の値を持つ型
+                                    </summary>
+                                    <p>                                        
+                                        <br />
+                                        （例）
+                                        </p>
+<pre class="code">
+char a = 'A';    
+</pre>
+                                    </details>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th>
+                                        BOOL
+                                </th>
+                                <td colspan="2">
+                                    <details>
+                                    <summary>
+                                            YES/NOのみを持つ型
+                                    </summary>
+                                    <p>
+                                            （※BOOL型はtrue/falseではなくYES/NOという値を持ちます。）                                 
+                                        <br />
+                                        （例）
+                                        </p>
+<pre class="code">
+BOOL b = YES;
+</pre>
+                                    </details>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th>
+                                    参照型
+                                </th>
+                                <td colspan="2">
+                                    <details>
+                                    <summary>
+                                            基本データ型以外のデータは全て参照型
+                                    </summary>
+                                    <p>          
+                                        Objective-C言語では、参照型を宣言する時はポインタ変数として宣言しなければなりません。
+                                        <br />
+                                        ポインタ変数として宣言するには変数名の前に「*」（アスタリスク）を付ければOKです。                                                                 
+                                        <br />
+                                        （例）
+                                        </p>
+<pre class="code">
+NSString *string = @"文字列";
+</pre>
+                                    </details>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                    <th>
+                                            id型
+                                    </th>
+                                    <td colspan="2">
+                                        <details>
+                                        <summary>
+                                                このid型は汎用的な型なのでどんな型でもセットすることができる
+                                        </summary>
+                                        <p>          
+                                                Objective-Cでは「id」型という型が定義されています。このid型は汎用的な型なのでどんな型でもセットすることができます。
+                                                <br />
+                                                （JavaでいうObject型のようなものです。）
+                                                <br/>
+                                                （id型は内部的には対象オブジェクトへのポインタを持っています。）
+                                                <br/>
+                                                <br/>
+                                                このid型も参照型の１つですが、id型に限り宣言時に「*」（アスタリスク）は不要です。
+                                                <br />
+                                            （例）
+                                            </p>
+<pre class="code">
+id obj = @"ほげ";
+</pre>
+                                        </details>
+                                    </td>
+                                </tr>
+                        </tbody>
+                </table>
+            </section>
+
+            <section>
+                <p>
+                    id型を正しい型に変換するには以下のようにします。
+                </p>
+<h5 class="code">// 上記例のid型objをNSString型に変換する。</h5>
+<pre class="code">
+NSString *str = (NSString*)obj;
+</pre>
+                <p>
+                        ※変換しようとする型は、変換できる型でなければなりません。
+                        <br />
+                        変換できない型を指定するとエラーとなります。
+                </p>
+            </section>
+            
+    <nav id="nav_basic">
+        <a href="./basicStart.html">基礎知識</a>
+        <a href="./datatype.html#basic">データ型</a>
+        <a href="./fanction.html">関数</a>
+    </nav>
+
+    </main>
+        <footer>
+            <a class="main_menu" href="http://sunstripe.main.jp/">HOME</a> > <a class="main_menu" href="./index.html">素敵曜日 - Design Lab</a> > <a class="main_menu" href="./reference.html">reference</a> > <a class="main_menu" href="./help.html">HELP</a>
+            <br />
+            <div style="clear:both;text-align:center;">                
+                &copy; 2011 - <script>
+                    var newDate = new Date();
+                    //年・月・日・曜日を取得する
+                    var year = newDate.getFullYear();
+                    document.write(year);
+                    </script> Team Sun Stripe.inc
+            </div>
+        </footer>
+    </body>
+</html>
