@@ -1,129 +1,13 @@
 <!DOCTYPE html>
 <html lang="ja" target="_blank">
     <head>
+        <!-- meta name="robots" content="noindex, nofollow" /-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=10.0,user-scalable=yes" />
         <meta charset="UTF-8"/>
         <title>素敵曜日 - Objective-C Lab - 基礎知識(basicStart)</title>
+        <link rel="stylesheet" type="text/css" href="./css/styles.css"/>
         <style>
         /* デザイン切り分け */
-        * {
-            margin: 0;
-            padding: 0;
-        }
-        html {
-            width: 100%;
-        }
-        body {
-            width: 100%;
-        }
-        h1 {
-            padding:10px;
-            padding-top:20px;
-            background-color: rgba(100,100,255,0.8);
-        }
-        h2 {
-            padding:10px;
-            padding-left:5px;
-            background-color: #fff;
-            color:darkblue;
-            border-left-style: solid;
-            border-left-color:darkblue;
-            border-left-width: 10px;
-        }
-        h3 {
-            padding:10px;
-            background-color: #fff;
-            color:darkgray;
-        }
-        h4 {
-            padding:10px;
-            background-color: #fff;
-            color:darkgray;
-        }
-        h5 {
-            padding:10px;
-            background-color: #fff;
-            color:darkgray;
-        }
-        .code {
-            background-color: black;
-            color: rgba(3, 200, 255, 0.8);
-            padding:10px;
-        }
-        h5.code {
-            background-color: black;
-            color: rgba(1, 200, 3, 0.8);
-        }
-        table {
-            width: 100%;
-        }
-        a {
-            text-decoration:none;
-        }
-        a:hover {
-            opacity: 0.8;   
-        }
-        a:visited {
-            color: blueviolet;
-        }
-        a:active {
-            font-weight: bold;
-        }
-        a.visited {
-            color: black;
-            font-weight: bold;
-        }
-        p {
-            padding:10px;
-        }
-        ul {
-            padding:20px;
-            padding-left:40px;
-        }
-        li {
-            padding:10px;
-            padding-left:20px;
-        }
-        li:hover {
-            background-color: rgba(0, 0, 100, 0.01);
-        }
-        /* header */
-
-        header {
-            width: 100%;
-            padding-bottom: 30px;
-        }
-
-        #header_nav_menu_ul {
-            background-color: #444;	
-            padding: 3px;	
-        }
-        li.headerMenuList {
-            display: inline; 	
-            margin-right: 1em;
-        } 
-        li.headerMenuList a { 
-            font-family: "Trebuchet MS", sans-serif; 
-            text-decoration: none;
-            color: #fff; 	 
-        }
-        li.headerMenuList a:hover{ 
-            border-bottom: dotted 1px #fff;	 
-        }
-
-        main {
-            width: 95%;
-
-            margin: 0 auto;
-            padding: 0;
-
-            padding-top: 10px;
-            padding-bottom: 10px;
-        }
-
-        footer {
-            width: 100%;
-            padding-top: 30px;
-        }
         </style>
         <script>
         /* JavaScript切り分け */
@@ -182,12 +66,17 @@
             <h1>Objective-C基礎知識</h1>
             <p>
                 Objective-Cの基礎知識について学んでいきます。
+                Objective-Cの基礎知識（はじめに）について学んでいきます。
             </p>
 
             <nav>
                     <a href="./index.html">Objective-C Lab</a>
                     <a href="./basic.html">基礎編</a>
                     <a class="visited" href="./basicStart.html">基礎知識</a>
+                    <a class="visited" href="./basicStart.html">基礎知識(start)</a>
+                    <a href="./datatype.html#basic">データ型（datatype）</a>
+                    <a href="./fanction.html#basic">関数（fanction）</a>
+                    <a href="./syntax.html#basic">基本構文（syntax）</a>
             </nav>
 
         <p>
@@ -207,6 +96,79 @@
                 /* xxx */	ブロック単位のコメントです。
                 「/*」と「*/」で囲まれた部分はコメントとして認識されます。
                 </p>
+                <br />
+                <h3>チュートリアル</h3>
+        </p>
+
+        <h1>Objective-C／基本</h1>
+        <p>
+            ここでは、Objective-Cの基本についてみてみましょう。
+        </p>
+        <section>
+                <h2>コメントについて</h2>
+                <p>
+                        Objective-Cのコメントは、行単位のコメントとブロック単位のコメントの２種類が書けます。
+                </p>
+
+                <table>
+                        <caption>
+                                <strong>
+                                    コメントについて
+                                </strong>
+                        </caption>
+
+                        <thead>
+                        <tr>
+                            <th>
+                                コメント記号
+                            </th>
+                            <th style="width: 80%;">
+                                <details>
+                                    <summary>
+                                        表題(表題をタップして説明/解説表示)
+                                    </summary>
+                                    <p>
+                                        説明/解説                      
+                                    </p>
+                                </details>
+                            </th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <th>
+                                    //
+                                </th>
+                                <td colspan="2">
+                                    <details>
+                                    <summary>	
+                                        行単位のコメント
+                                    </summary>
+                                    <p>
+                                            「//」を書いた以降から行末までの文字はコメントとして認識されます。                     
+                                        </p>
+                                    </details>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    /* xxx */
+                                </th>
+                                <td colspan="2">
+                                    <details>
+                                    <summary>
+                                            ブロック単位のコメント
+                                    </summary>
+                                    <p>
+                                            「/*」と「*/」で囲まれた部分はコメントとして認識されます。              
+                                    </p>
+                                    </details>
+                                </td>
+                            </tr>
+                            
+                        </tbody>
+                </table>
         </section>
         
         <section>
@@ -214,25 +176,21 @@
                 <p>
                 Objective-Cで特徴的なのが、１つのプログラムファイルがこのヘッダファイルとメインファイルの２つで構成されていることです。（OracleのPL/SQLなどを知っている方はイメージしやすいかと思います。）
                 
+                <br />
                 ヘッダーファイルにはメンバー変数と、定義するメソッド名（引数なども含む）のみ定義しておいて、メインファイルにはメソッドを定義するといった感じでコーディングします。
                 </p>
         </section>
 
         <section>                                    
             <h2>メモリ解放について</h2>
+            <p>
+                    ここではiPhoneOS上のObjective-Cについて解説しますが、iPhone上でのObjective-Cでは、ガーベジコレクションのようなメモリの自動解放はやってくれませんので、手動で解放するロジックをコーディングする必要があります。
+            </p>
                 <table>
                         <caption>
                                 <strong>
                                     メモリ解放について
                                 </strong>
-                                <details>
-                                <summary>
-                                    メモリ解放の解説
-                                </summary>
-                                <p>
-                                        ここではiPhoneOS上のObjective-Cについて解説しますが、iPhone上でのObjective-Cでは、ガーベジコレクションのようなメモリの自動解放はやってくれませんので、手動で解放するロジックをコーディングする必要があります。
-                                </p>
-                                </details>
                         </caption>
 
                         <thead>
@@ -241,15 +199,15 @@
                                 関連メソッド
                             </th>
                             <th style="width: 80%;">
-                                表題
+                                <details>
+                                <summary>
+                                        表題(表題をタップして説明/解説表示)
+                                </summary>
+                                <p>
+                                        説明/解説                      
+                                    </p>
+                                </details>
                             </th>
-                        </tr>
-                        <tr>
-                            <td>
-                            </td>
-                            <td style="width: 80%;text-align: center;">
-                                説明(表題をタップして表示)
-                            </td>
                         </tr>
                         </thead>
 
@@ -343,6 +301,7 @@ private String getAppendValue(String str1, String str2){
 </pre>
 
 <h5 class="code">// Objective-C</h5>
+<pre class="code">
 - (NSString*) getAppendValue:(NSString*)str1 appendStr:(NSString*)str2{
     return [str1 stringByAppendingString:str2];
 }
@@ -389,6 +348,11 @@ NSString *str = [calc getValue];
     </p>
 </section>
 
+<nav id="nav_basic">
+    <a href="./basic.html">基礎編</a>
+    <a href="./basicStart.html">基礎知識</a>
+    <a href="./datatype.html#basic">データ型</a>
+</nav>
     </main>
 
         <footer>
