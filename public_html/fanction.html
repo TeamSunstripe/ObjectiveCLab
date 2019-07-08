@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="ja" target="_blank">
+    <head>
+        <!-- meta name="robots" content="noindex, nofollow" /-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=10.0,user-scalable=yes" />
+        <meta charset="UTF-8"/>
+        <title>素敵曜日 - Objective-C Lab - 関数(fanction)</title>
+        <link rel="stylesheet" type="text/css" href="./css/styles.css"/>
+        <style>
+        /* デザイン切り分け */
+        </style>
+        <script>
+        /* JavaScript切り分け */
+        </script>
+    </head>
+    <body>
+
+            <header><!-- header start //-->
+                
+                <nav id="header_nav"><!-- nav start -->
+    
+                    <menu id="header_nav_menu"><!-- menu start -->
+    
+                        <ul id="header_nav_menu_ul"><!-- ul start -->
+                            <li class="headerMenuList">
+                                <a class="baseMenu" href="http://sunstripe-main.jp/">
+                                    サンストライプ - HOME
+                                </a>
+                            </li>
+                            <li class="headerMenuList">
+                                <a class="baseMenu" href="http://sunstripe-main.jp/#programing">
+                                    プログラミング開発チーム
+                                </a>
+                            </li>
+                            <li class="headerMenuList">
+                                <a class="baseMenu" href="http://sunstripe.main.jp/ObjectiveCLab/">
+                                    素敵曜日 - Objective-C Lab
+                                </a>
+                            </li>
+                            <li class="headerMenuList">
+                                <a class="baseMenu" href="./basic.html">
+                                    basic
+                                </a>
+                            </li>
+                            <li class="headerMenuList">
+                                <a class="baseMenu" href="./expansion.html">
+                                    expansion
+                                </a></li>
+                            <li class="headerMenuList">
+                                <a class="baseMenu" href="./reference.html">
+                                    reference
+                                </a>
+                            </li>
+                        </ul><!-- ul start -->
+    
+                    </menu><!-- menu start -->
+    
+                </nav><!-- nav end -->
+    
+                <a href="./index.html"><h3>プログラミング開発チーム - サンストライプ - Objective-C Lab</h3></a>
+                
+        </header><!-- header end //-->
+
+    <main id="main">
+
+            <h1>Objective-C基礎知識</h1>
+            <p>
+                Objective-Cの基礎知識(関数)について学んでいきます。
+            </p>
+
+
+            <nav>
+                    <a href="./index.html">Objective-C Lab</a>
+                    <a href="./basic.html">基礎編</a>
+                    <a href="./basicStart.html">基礎知識(start)</a>
+                    <a href="./datatype.html#basic">データ型（datatype）</a>
+                    <a class="visited" href="./fanction.html#basic">関数（fanction）</a>
+                    <a href="./syntax.html#basic">基本構文（syntax）</a>
+            </nav>
+
+        <p>
+                ここでは、Objective-Cでプログラミングをする上での基礎知識をまとめてみました。
+                <br />
+                （Objective-C言語は基本がC言語なのでCを知っている方にとっては問題ないかと思います。）
+                <br />
+                <h3>チュートリアル</h3>
+        </p>
+
+        <h1>Objective-C／関数</h1>
+        <p>
+                Objective-Cで利用できる関数と定数です。
+                <br />
+                Objective-CはC言語の拡張版なのでC言語で使用できる関数はそのまま使用できます。
+        </p>
+        <section>
+                
+                <h2>主要関数</h2>
+                <p>
+                        ここでは、Objective-Cでプログラミングをする上での様々な関数をまとめてみました。
+                </p>
+
+                <h3>算術関数</h3>
+                <table>
+                    <caption>
+                            <strong>
+                                【算術関数】
+                            </strong>
+                    </caption>
+
+                    <thead>
+                        <tr>
+                            <th>
+                                関数名
+                            </th>
+                            <th style="width: 80%;">
+                                <details>
+                                    <summary>
+                                        表題(表題をタップして説明/解説表示)
+                                    </summary>
+                                    <p>
+                                        説明/解説                      
+                                    </p>
+                                </details>
+                            </th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <th>
+                                int rand()	
+                            </th>
+                            <td colspan="2">
+                                <details>
+                                <summary>
+                                    乱数を発生させる
+                                </summary>
+                                <p>
+                                    （例）
+                                </p>
+    
+<h5 class="code">// Objectice-C</h5>
+<pre class="code">
+    srand(time(nil));　//乱数初期化
+    int val = rand()%50;　//0～49までの間で乱数を発生
+</pre>
+
+                                </details>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                int abs(int a)
+                            </th>
+                            <td colspan="2">
+                                <details>
+                                <summary>
+                                    整数値aの絶対値を求める
+                                </summary>
+                                <p>
+                                    （例）
+                                </p>
+
+<h5 class="code">// Objectice-C</h5>
+<pre class="code">
+int val = abs(-8);
+→8
+</pre>
+
+                                <p>
+                                   ※値が浮動小数点型の場合はfabs関数を使用します。
+                                </p>
+                                </details>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                double fabs(double a)
+                            </th>
+                            <td colspan="2">
+                                <details>
+                                <summary>
+                                        浮動小数値aの絶対値を求める
+                                </summary>
+                                <p>
+                                    （例）
+                                </p>
+
+<h5 class="code">// Objectice-C</h5>
+<pre class="code">
+double val = fabs(-12.345);
+→12.345
+</pre>
+
+                                <p>
+                                ※値が整数型の場合はabs関数を使用します。
+                                </p>
+                                </details>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                    double floor(double a)
+                            </th>
+                            <td colspan="2">
+                                <details>
+                                <summary>
+                                        小数点以下切り捨てる
+                                </summary>
+                                <p>
+                                    （例）
+                                </p>
+
+<h5 class="code">// Objectice-C</h5>
+<pre class="code">
+double val = floor(12.345);
+→12.000
+</pre>
+
+                                </details>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                double ceil(double a);
+                            </th>
+                            <td colspan="2">
+                                <details>
+                                <summary>
+                                        小数点以下切り上げる
+                                </summary>
+                                <p>
+                                    （例）
+                                </p>
+
+<h5 class="code">// Objectice-C</h5>
+<pre class="code">
+double val = ceil(12.345);
+→13.000
+</pre>
+
+                                </details>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                double pow(double a, double b)
+                            </th>
+                            <td colspan="2">
+                                <details>
+                                <summary>
+                                        aのb乗を求める
+                                </summary>
+                                <p>
+                                    （例）
+                                </p>
+
+<h5 class="code">// Objectice-C</h5>
+<pre class="code">
+double val = pow(2, 3);
+→8
+</pre>
+
+                                </details>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                double sqrt(double a)
+                            </th>
+                            <td colspan="2">
+                                <details>
+                                <summary>
+                                        平方根を求める
+                                </summary>
+                                <p>
+                                    （例）
+                                </p>
+
+<h5 class="code">// Objectice-C</h5>
+<pre class="code">
+double val = sqrt(2);
+→1.41421356
+</pre>
+
+                                </details>
+                            </td>
+                        </tr>
+                    </tbody>
+            </table>
+
+            <h3>三角関数</h3>
+                <table>
+                        <caption>
+                                <strong>
+                                    【三角関数】
+                                </strong>
+                        </caption>
+    
+                        <thead>
+                            <tr>
+                                <th>
+                                    関数名
+                                </th>
+                                <th style="width: 80%;">
+                                    <details>
+                                        <summary>
+                                            表題(表題をタップして説明/解説表示)
+                                        </summary>
+                                        <p>
+                                            説明/解説                      
+                                        </p>
+                                    </details>
+                                </th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <th>
+                                        double cos(double a)
+                                </th>
+                                <td colspan="2">
+                                    <details>
+                                    <summary>
+                                            コサイン（余弦）を求める　（aはラジアン値）
+                                    </summary>
+                                    <p>
+                                        （例）
+                                    </p>
+    <!--
+    <h5 class="code">// Objectice-C</h5>
+    <pre class="code">
+    double val = sqrt(2);
+    →1.41421356
+    </pre>
+    //-->
+                                    </details>
+                                </td>
+                            </tr>
+                            <tr>
+                                    <th>
+                                        double sin(double a)
+                                    </th>
+                                    <td colspan="2">
+                                        <details>
+                                        <summary>
+                                                サイン（正弦）を求める
+                                        </summary>
+                                        <p>
+                                            （例）
+                                        </p>
+
+<!--
+<h5 class="code">// Objectice-C</h5>
+<pre class="code">
+double val = sqrt(2);
+→1.41421356
+</pre>
+//-->
+
+                                        </details>
+                                    </td>
+                            </tr>
+
+                            <tr>
+                                    <th>
+                                        double tan(double a)
+                                    </th>
+                                    <td colspan="2">
+                                        <details>
+                                        <summary>
+                                            タンジェント（正接）を求める　（aはラジアン値）
+                                        </summary>
+                                        <p>
+                                            （例）
+                                        </p>
+
+<!--
+<h5 class="code">// Objectice-C</h5>
+<pre class="code">
+double val = sqrt(2);
+→1.41421356
+</pre>
+//-->
+
+                                        </details>
+                                    </td>
+                            </tr>
+
+                            <tr>
+                                    <th>
+                                        double asin(double a)
+                                    </th>
+                                    <td colspan="2">
+                                        <details>
+                                        <summary>
+                                            アークサイン（逆正弦）を求める　（aはラジアン値）
+                                        </summary>
+                                        <p>
+                                            （例）
+                                        </p>
+
+<!--
+<h5 class="code">// Objectice-C</h5>
+<pre class="code">
+double val = sqrt(2);
+→1.41421356
+</pre>
+//-->
+
+                                        </details>
+                                    </td>
+                            </tr>
+
+                            <tr>
+                                    <th>
+                                        double acos(double a)
+                                    </th>
+                                    <td colspan="2">
+                                        <details>
+                                        <summary>
+                                                アークコサイン（逆余弦）を求める　（aはラジアン値）
+                                        </summary>
+                                        <p>
+                                            （例）
+                                        </p>
+
+<!--
+<h5 class="code">// Objectice-C</h5>
+<pre class="code">
+double val = sqrt(2);
+→1.41421356
+</pre>
+//-->
+
+                                        </details>
+                                    </td>
+                            </tr>
+
+                            <tr>
+                                    <th>
+                                        double atan(double a)
+                                    </th>
+                                    <td colspan="2">
+                                        <details>
+                                        <summary>	
+                                            アークタンジェント（逆正接）を求める
+                                        </summary>
+                                        <p>
+                                            （例）
+                                        </p>
+
+<!--
+<h5 class="code">// Objectice-C</h5>
+<pre class="code">
+double val = sqrt(2);
+→1.41421356
+</pre>
+//-->
+
+                                        </details>
+                                    </td>
+                            </tr>
+
+                            <tr>
+                                    <th>
+                                        double atan2(double a, double b)
+                                    </th>
+                                    <td colspan="2">
+                                        <details>
+                                        <summary>
+                                            アークタンジェント２（逆正接の主値）を求める
+                                        </summary>
+                                        <p>
+                                            （例）
+                                        </p>
+
+<!--
+<h5 class="code">// Objectice-C</h5>
+<pre class="code">
+double val = sqrt(2);
+→1.41421356
+</pre>
+//-->
+
+                                        </details>
+                                    </td>
+                            </tr>
+                        </tbody>
+                </table>
+
+                <h3>指数関数</h3>
+                <table>
+                        <caption>
+                                <strong>
+                                    【指数関数】
+                                </strong>
+                        </caption>
+    
+                        <thead>
+                            <tr>
+                                <th>
+                                    関数名
+                                </th>
+                                <th style="width: 80%;">
+                                    <details>
+                                        <summary>
+                                            表題(表題をタップして説明/解説表示)
+                                        </summary>
+                                        <p>
+                                            説明/解説                      
+                                        </p>
+                                    </details>
+                                </th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr>
+                                <th>
+                                        double log(double a)	
+                                </th>
+                                <td colspan="2">
+                                    <details>
+                                    <summary>	
+                                            aの自然対数を求める
+                                    </summary>
+                                    <p>
+                                        （例）
+                                    </p>
+
+<!--
+<h5 class="code">// Objectice-C</h5>
+<pre class="code">
+double val = sqrt(2);
+→1.41421356
+</pre>
+//-->
+
+                                    </details>
+                                </td>
+                        </tr>
+
+                        <tr>
+                                <th>
+                                        double log10(double a)	
+                                                </th>
+                                <td colspan="2">
+                                    <details>
+                                    <summary>
+                                            10を底とするaの対数を求める
+                                    </summary>
+                                    <p>
+                                        （例）
+                                    </p>
+
+<!--
+<h5 class="code">// Objectice-C</h5>
+<pre class="code">
+double val = sqrt(2);
+→1.41421356
+</pre>
+//-->
+
+                                    </details>
+                                </td>
+                        </tr>
+                    </tbody>
+            </table>
+
+            <h3>定数</h3>
+            <table>
+                    <caption>
+                            <strong>
+                                【定数】
+                            </strong>
+                    </caption>
+
+                    <thead>
+                        <tr>
+                            <th>
+                                定数名
+                            </th>
+                            <th style="width: 80%;">
+                                <details>
+                                    <summary>
+                                        表題(表題をタップして説明/解説表示)
+                                    </summary>
+                                    <p>
+                                        説明/解説                      
+                                    </p>
+                                </details>
+                            </th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                            <th>
+                                    M_PI
+                                        </th>
+                            <td colspan="2">
+                                <details>
+                                <summary>	
+                                        円周率を表す定数（=π）
+                                </summary>
+                                <p>
+                                    （例）
+                                </p>
+
+<!--
+<h5 class="code">// Objectice-C</h5>
+<pre class="code">
+double val = sqrt(2);
+→1.41421356
+</pre>
+//-->
+
+                                </details>
+                            </td>
+                    </tr>
+
+                    <tr>
+                            <th>
+                                    M_PI_2
+                            </th>
+                            <td colspan="2">
+                                <details>
+                                <summary>
+                                        円周率の１/２を表す定数（=π/2）
+                                </summary>
+                                <p>
+                                    （例）
+                                </p>
+
+<!--
+<h5 class="code">// Objectice-C</h5>
+<pre class="code">
+double val = sqrt(2);
+→1.41421356
+</pre>
+//-->
+
+                                </details>
+                            </td>
+                    </tr>
+
+                    <tr>
+                            <th>
+                                    M_PI_4
+                                            </th>
+                            <td colspan="2">
+                                <details>
+                                <summary>
+                                        円周率の１/４を表す定数（=π/4）
+                                </summary>
+                                <p>
+                                    （例）
+                                </p>
+
+<!--
+<h5 class="code">// Objectice-C</h5>
+<pre class="code">
+double val = sqrt(2);
+→1.41421356
+</pre>
+//-->
+
+                                </details>
+                            </td>
+                    </tr>
+
+
+                    <tr>
+                            <th>
+                                    M_1_PI
+                            </th>
+                            <td colspan="2">
+                                <details>
+                                <summary>
+                                        １/円周率を表す定数（=1/π）
+                                </summary>
+                                <p>
+                                    （例）
+                                </p>
+
+<!--
+<h5 class="code">// Objectice-C</h5>
+<pre class="code">
+double val = sqrt(2);
+→1.41421356
+</pre>
+//-->
+
+                                </details>
+                            </td>
+                    </tr>
+
+
+                    <tr>
+                            <th>
+                                    M_2_PI
+                                            </th>
+                            <td colspan="2">
+                                <details>
+                                <summary>
+                                        ２/円周率を表す定数（=2/π）
+                                </summary>
+                                <p>
+                                    （例）
+                                </p>
+
+<!--
+<h5 class="code">// Objectice-C</h5>
+<pre class="code">
+double val = sqrt(2);
+→1.41421356
+</pre>
+//-->
+
+                                </details>
+                            </td>
+                    </tr>
+
+                    <tr>
+                            <th>
+                                M_E
+                            </th>
+                            <td colspan="2">
+                                <details>
+                                <summary>
+                                        ネイピア数を表す定数（=e）
+                                </summary>
+                                <p>
+                                    （例）
+                                </p>
+
+<!--
+<h5 class="code">// Objectice-C</h5>
+<pre class="code">
+double val = sqrt(2);
+→1.41421356
+</pre>
+//-->
+
+                                </details>
+                            </td>
+                    </tr>
+
+                    <tr>
+                            <th>
+                                    M_LOG2E
+                            </th>
+                            <td colspan="2">
+                                <details>
+                                <summary>
+                                        log_2(e)
+                                </summary>
+                                <p>
+                                    （例）
+                                </p>
+
+<!--
+<h5 class="code">// Objectice-C</h5>
+<pre class="code">
+double val = sqrt(2);
+→1.41421356
+</pre>
+//-->
+
+                                </details>
+                            </td>
+                    </tr>
+
+                    <tr>
+                            <th>
+                                    M_LOG10E
+                                            </th>
+                            <td colspan="2">
+                                <details>
+                                <summary>
+                                        log_10(e)
+                                </summary>
+                                <p>
+                                    （例）
+                                </p>
+
+<!--
+<h5 class="code">// Objectice-C</h5>
+<pre class="code">
+double val = sqrt(2);
+→1.41421356
+</pre>
+//-->
+
+                                </details>
+                            </td>
+                    </tr>
+                </tbody>
+        </table>
+
+                <p>
+                        主要な関数・定数のみ掲載しています。
+                </p>
+            </section>
+            
+            <nav id="nav_basic">
+                    <a href="./datatype.html#basic">データ型</a>
+                    <a href="./fanction.html#basic">関数</a>
+                    <a href="./syntax.html#basic">基本構文</a>
+                </nav>
+            
+    </main>
+
+        <footer>
+            <a class="main_menu" href="http://sunstripe.main.jp/">HOME</a> > <a class="main_menu" href="./index.html">素敵曜日 - Design Lab</a> > <a class="main_menu" href="./reference.html">reference</a> > <a class="main_menu" href="./help.html">HELP</a>
+            <br />
+            <div style="clear:both;text-align:center;">                
+                &copy; 2011 - <script>
+                    var newDate = new Date();
+                    //年・月・日・曜日を取得する
+                    var year = newDate.getFullYear();
+                    document.write(year);
+                    </script> Team Sun Stripe.inc
+            </div>
+        </footer>
+    </body>
+</html>
