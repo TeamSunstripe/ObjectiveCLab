@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="ja" target="_blank">
+    <head>
+        <!-- meta name="robots" content="noindex, nofollow" /-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=10.0,user-scalable=yes" />
+        <meta charset="UTF-8"/>
+        <title>素敵曜日 - Objective-C Lab - 基本構文(syntax)</title>
+        <link rel="stylesheet" type="text/css" href="./css/styles.css"/>
+        <style>
+        /* デザイン切り分け */
+        </style>
+        <script>
+        /* JavaScript切り分け */
+        </script>
+    </head>
+    <body>
+
+            <header><!-- header start //-->
+                
+                <nav id="header_nav"><!-- nav start -->
+    
+                    <menu id="header_nav_menu"><!-- menu start -->
+    
+                        <ul id="header_nav_menu_ul"><!-- ul start -->
+                            <li class="headerMenuList">
+                                <a class="baseMenu" href="http://sunstripe-main.jp/">
+                                    サンストライプ - HOME
+                                </a>
+                            </li>
+                            <li class="headerMenuList">
+                                <a class="baseMenu" href="http://sunstripe-main.jp/#programing">
+                                    プログラミング開発チーム
+                                </a>
+                            </li>
+                            <li class="headerMenuList">
+                                <a class="baseMenu" href="http://sunstripe.main.jp/ObjectiveCLab/">
+                                    素敵曜日 - Objective-C Lab
+                                </a>
+                            </li>
+                            <li class="headerMenuList">
+                                <a class="baseMenu" href="./basic.html">
+                                    basic
+                                </a>
+                            </li>
+                            <li class="headerMenuList">
+                                <a class="baseMenu" href="./expansion.html">
+                                    expansion
+                                </a></li>
+                            <li class="headerMenuList">
+                                <a class="baseMenu" href="./reference.html">
+                                    reference
+                                </a>
+                            </li>
+                        </ul><!-- ul start -->
+    
+                    </menu><!-- menu start -->
+    
+                </nav><!-- nav end -->
+    
+                <a href="./index.html"><h3>プログラミング開発チーム - サンストライプ - Objective-C Lab</h3></a>
+                
+        </header><!-- header end //-->
+
+    <main id="main">
+
+            <h1>Objective-C基礎知識</h1>
+            <p>
+                Objective-Cの基礎知識(基本構文)について学んでいきます。
+            </p>
+
+
+            <nav>
+                    <a href="./index.html">Objective-C Lab</a>
+                    <a href="./basic.html">基礎編</a>
+                    <a href="./basicStart.html">基礎知識(start)</a>
+                    <a href="./datatype.html#basic">データ型（datatype）</a>
+                    <a href="./fanction.html#basic">関数（fanction）</a>
+                    <a class="visited" href="./syntax.html#basic">基本構文（syntax）</a>
+            </nav>
+
+        <p>
+                ここでは、Objective-Cでプログラミングをする上での基礎知識をまとめてみました。
+                <br />
+                （Objective-C言語は基本がC言語なのでCを知っている方にとっては問題ないかと思います。）
+                <br />
+                <h3>チュートリアル</h3>
+        </p>
+
+        <h1>Objective-C／基本構文</h1>
+        <p>
+            if文、for文、switch文、while文、do-while文の構文です。
+            <br />
+            書き方を忘れた時にも便利です。    
+        </p>
+        <section>
+                
+                <h2>if構文</h2>
+                <p>
+                    ifは条件に合致するかしないかを判定する処理を行います。
+                </p>
+
+                <h3>if構文</h3>
+                <table>
+                        <caption>
+                                <strong>
+                                    【if構文】
+                                </strong>
+                        </caption>
+    
+                        <thead>
+                            <tr>
+                                <th>
+                                    構文名
+                                </th>
+                                <th style="width: 80%;">
+                                    <details>
+                                        <summary>
+                                            表題(表題をタップして説明/解説表示)
+                                        </summary>
+                                        <p>
+                                            説明/解説                      
+                                        </p>
+                                    </details>
+                                </th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr>
+                                <th>
+                                    if構文
+                                </th>
+                                <td colspan="2">
+                                    <details>
+                                    <summary>	
+                                            条件が合えば、処理を行う
+                                    </summary>
+                                    <p>
+                                            書き方
+                                    </p>
+
+<h5 class="code">// Objectice-C</h5>
+<pre class="code">
+// if構文
+if(条件){
+  // 条件=YESの場合の処理
+}
+</pre>
+
+                                    </details>
+                                </td>
+                        </tr>
+
+                        <tr>
+                                <th>
+                                    if～else構文
+                                </th>
+                                <td colspan="2">
+                                    <details>
+                                    <summary>
+                                            条件が合えば、処理（１）を行い、それ以外は、処理（２）を行う
+                                    </summary>
+                                    <p>
+                                            書き方
+                                    </p>
+
+<h5 class="code">// Objectice-C</h5>
+<pre class="code">
+// if～else構文
+if(条件){
+  // 条件=YESの場合の処理
+}else{
+  // 条件=NOの場合の処理
+}
+</pre>
+
+                                    </details>
+                                </td>
+                        </tr>
+
+                        <tr>
+                                <th>
+                                    if～else if構文
+                                </th>
+                                <td colspan="2">
+                                    <details>
+                                    <summary>
+                                            条件１が合えば、処理（１）を行い、条件２が合えば、処理（２）を行い、それ以外は、処理（３）を行う
+                                    </summary>
+                                    <p>
+                                            書き方
+                                    </p>
+
+<h5 class="code">// Objectice-C</h5>
+<pre class="code">
+// if～else if構文
+if(条件１){
+  // 条件１=YESの場合の処理
+}else if(条件２){
+  // 条件２=YESの場合の処理
+}else{
+  // 条件１、条件２いずれもNOの場合の処理
+}
+</pre>
+
+                                    </details>
+                                </td>
+                        </tr>
+                    </tbody>
+            </table>
+
+            <h2>三項演算子構文</h2>
+            <p>
+                ifと同様に三項演算子構文は、条件分岐する処理を行います。
+            </p>
+
+            <h3>三項演算子構文</h3>
+            <table>
+                    <caption>
+                            <strong>
+                                【三項演算子構文】
+                            </strong>
+                    </caption>
+
+                    <thead>
+                        <tr>
+                            <th>
+                                構文名
+                            </th>
+                            <th style="width: 80%;">
+                                <details>
+                                    <summary>
+                                        表題(表題をタップして説明/解説表示)
+                                    </summary>
+                                    <p>
+                                        説明/解説                      
+                                    </p>
+                                </details>
+                            </th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                            <th>
+                                三項演算子構文
+                            </th>
+                            <td colspan="2">
+                                <details>
+                                <summary>	
+                                        (条件)?＜条件=YESの場合の処理＞:＜条件=NOの場合の処理＞;
+                                    </summary>
+                                <p>
+                                        ※上記「if～else構文」と同じ処理になります。
+                                    <br />
+                                    書き方
+                                </p>
+
+<h5 class="code">// Objectice-C</h5>
+<pre class="code">
+// aとbが同じなら「おなじ」違う時は「ちがう」を返す。
+NSString *str = (a==b)?@"おなじ":@"ちがう";
+</pre>
+
+                                </details>
+                            </td>
+                    </tr>
+                </tbody>
+        </table>
+
+        <h2>for構文</h2>
+        <p>
+            forは指定された回数だけ処理をループ実行する処理を行います。
+        </p>
+
+        <h3>for構文</h3>
+        <table>
+                <caption>
+                        <strong>
+                            【for構文】
+                        </strong>
+                </caption>
+
+                <thead>
+                    <tr>
+                        <th>
+                            構文名
+                        </th>
+                        <th style="width: 80%;">
+                            <details>
+                                <summary>
+                                    表題(表題をタップして説明/解説表示)
+                                </summary>
+                                <p>
+                                    説明/解説                      
+                                </p>
+                            </details>
+                        </th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                        <th>
+                            for構文
+                        </th>
+                        <td colspan="2">
+                            <details>
+                            <summary>	
+                                    forは指定された回数だけ処理をループ実行します。
+                            </summary>
+                            <p>
+                                書き方
+                            </p>
+
+<h5 class="code">// Objectice-C</h5>
+<pre class="code">
+// for構文
+for(変数初期値; ループ回数; 変数増分){
+  // 処理
+}
+</pre>
+
+                            <p>
+                            （例）
+                            </p>
+
+<h5 class="code">// Objectice-C</h5>
+<pre class="code">
+// for例文
+// 例：iを0から99まで100ループさせる
+for(int i=0; i&lt;100; i++) {
+  // 処理
+}
+</pre>
+
+                            <p>
+                                for文には高速列挙というリスト型の件数分ループ処理を行うということもできます。
+                            </p>
+                            </details>
+                        </td>
+                </tr>
+
+                <tr>
+                        <th>
+                            高速列挙構文
+                        </th>
+                        <td colspan="2">
+                            <details>
+                            <summary>
+                                    コレクションクラスから取り出す型を指定して、変数を取り出し、処理を高速で行います。
+                            </summary>
+                            <p>
+                                    ※上記「for構文」の高速処理になります。
+                                <br />
+                                書き方
+                            </p>
+
+<h5 class="code">// Objectice-C</h5>
+<pre class="code">
+for(取り出す変数の型 取り出す変数名 in コレクションクラス){
+　 // 処理
+}
+</pre>
+
+                            <p>
+                                （例）
+                            </p>
+
+<h5 class="code">// Objectice-C</h5>
+<pre class="code">
+// 例：変数arrayに格納されているデータを変数strとして取り出してNSLogに出力する
+// （※arrayはNSArray型、格納されているデータはNSString型とする）
+for (NSString *str in array) {
+  NSLog(str);
+}
+</pre>
+
+                            </details>
+                        </td>
+                </tr>
+            </tbody>
+    </table>
+
+    <h3>switch構文</h3>
+    <p>
+        switchは与えられた値から処理を選択する判定処理です。<br />
+        判定はbreakで抜けない限り、caseの上から１つずつ判定していきますので注意が必要です。
+    </p>
+    <table>
+            <caption>
+                    <strong>
+                        【switch構文】
+                    </strong>
+            </caption>
+
+            <thead>
+                <tr>
+                    <th>
+                        構文名
+                    </th>
+                    <th style="width: 80%;">
+                        <details>
+                            <summary>
+                                表題(表題をタップして説明/解説表示)
+                            </summary>
+                            <p>
+                                説明/解説                      
+                            </p>
+                        </details>
+                    </th>
+                </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                    <th>
+                            switch構文
+                    </th>
+                    <td colspan="2">
+                        <details>
+                        <summary>	
+                                switchは与える変数の値を、caseにわけて、判定する処理を実行します。
+                        </summary>
+                        <p>
+                            書き方
+                        </p>
+
+<h5 class="code">// Objectice-C</h5>
+<pre class="code">
+// switch構文
+switch(変数){
+  case 値１:
+    // 変数=値１の場合の処理
+    break;
+
+  case 値２:
+    // 変数=値２の場合の処理
+    break;
+
+  default:
+    // 上記の処理をbreakで抜けない限り常に処理
+    break;
+}
+</pre>
+<!--
+                        <p>
+                        （例）
+                        </p>
+
+<h5 class="code">// Objectice-C</h5>
+<pre class="code">
+        // switch構文
+        switch(変数){
+          case 値１:
+            // 変数=値１の場合の処理
+            break;
+        
+          case 値２:
+            // 変数=値２の場合の処理
+            break;
+        
+          default:
+            // 上記の処理をbreakで抜けない限り常に処理
+            break;
+        }
+</pre>
+-->
+                        </details>
+                    </td>
+            </tr>
+
+        </tbody>
+</table>
+
+<h3>while構文</h3>
+<p>
+   whileは条件がYESの間繰り返し実行を続けるルーチンです。
+   <br />
+   なので、条件がNOもしくは、breakで抜けるタイミングを作らないと永久ループとなってしまいます。
+</p>
+<table>
+        <caption>
+                <strong>
+                    【while構文】
+                </strong>
+        </caption>
+
+        <thead>
+            <tr>
+                <th>
+                    構文名
+                </th>
+                <th style="width: 80%;">
+                    <details>
+                        <summary>
+                            表題(表題をタップして説明/解説表示)
+                        </summary>
+                        <p>
+                            説明/解説                      
+                        </p>
+                    </details>
+                </th>
+            </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+                <th>
+                    while構文
+                </th>
+                <td colspan="2">
+                    <details>
+                    <summary>	
+                            whileは条件がYESの間繰り返し実行を続けるルーチンする処理です
+                    </summary>
+                    <p>
+                        書き方
+                    </p>
+
+<h5 class="code">// Objectice-C</h5>
+<pre class="code">
+// while構文
+while(条件){
+  // 条件がYESの場合処理
+}
+</pre>
+<!--
+                    <p>
+                    （例）
+                    </p>
+
+<h5 class="code">// Objectice-C</h5>
+<pre class="code">
+// while構文
+while(条件){
+  // 条件がYESの場合処理
+}
+</pre>
+-->
+                    </details>
+                </td>
+        </tr>
+
+        <tr>
+                <th>
+                    do-while構文
+                </th>
+                <td colspan="2">
+                    <details>
+                    <summary>
+                            do-whileは基本的にwhile文と同じですが、while文が１回も実行されない可能性があるのに対し、do-while文は最低１回は必ず実行されるという違いがあります。
+                    </summary>
+                    <p>
+                        書き方
+                    </p>
+
+<h5 class="code">// Objectice-C</h5>
+<pre class="code">
+// do-while構文
+do{
+  // 条件がYESの場合処理
+}while(条件);
+</pre>
+<!--
+                    <p>
+                    （例）
+                    </p>
+
+<h5 class="code">// Objectice-C</h5>
+<pre class="code">
+// do-while構文
+do{
+  // 条件がYESの場合処理
+}while(条件);
+</pre>
+-->
+                    </details>
+                </td>
+        </tr>
+    </tbody>
+</table>
+    <h3>条件について</h3>
+    <p>
+        ANDは「&&」、ORは「||」、NOTは「!」を使用します。
+    </p>
+<table>
+        <caption>
+                <strong>
+                    【条件】
+                </strong>
+        </caption>
+
+        <thead>
+            <tr>
+                <th>
+                    条件名
+                </th>
+                <th style="width: 80%;">
+                    <details>
+                        <summary>
+                            表題(表題をタップして説明/解説表示)
+                        </summary>
+                        <p>
+                            説明/解説                      
+                        </p>
+                    </details>
+                </th>
+            </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+                <th>
+                    a == b
+                </th>
+                <td colspan="2">
+                    <details>
+                    <summary>	
+                            aとbが同じ
+                    </summary>
+                    <p>
+                        書き方
+                    </p>
+
+<h5 class="code">// Objectice-C</h5>
+<pre class="code">
+// aとbが同じ
+if (a == b) {
+    // 処理
+}
+</pre>
+<!--
+                    <p>
+                    （例）
+                    </p>
+
+<h5 class="code">// Objectice-C</h5>
+<pre class="code">
+// aとbが同じ
+if (a == b) {
+    // 処理
+}
+</pre>
+-->
+                    </details>
+                </td>
+        </tr>
+
+        <tr>
+                <th>
+                        a != b
+                </th>
+                <td colspan="2">
+                    <details>
+                    <summary>	
+                            aとbが違う
+                    </summary>
+                    <p>
+                        書き方
+                    </p>
+
+<h5 class="code">// Objectice-C</h5>
+<pre class="code">
+// aとbが違う
+if (a != b) {
+    // 処理
+}
+</pre>
+<!--
+                    <p>
+                    （例）
+                    </p>
+
+<h5 class="code">// Objectice-C</h5>
+<pre class="code">
+// aとbが違う
+if (a != b) {
+    // 処理
+}
+</pre>
+-->
+                    </details>
+                </td>
+        </tr>
+
+        <tr>
+                <th>
+                    a && b
+                </th>
+                <td colspan="2">
+                    <details>
+                    <summary>	
+                            aかつb
+                    </summary>
+                    <p>
+                        書き方
+                    </p>
+
+<h5 class="code">// Objectice-C</h5>
+<pre class="code">
+// aかつb
+if (a && b) {
+    // 処理
+}
+</pre>
+<!--
+                    <p>
+                    （例）
+                    </p>
+
+<h5 class="code">// Objectice-C</h5>
+<pre class="code">
+// aかつb
+if (a && b) {
+    // 処理
+}
+</pre>
+-->
+                    </details>
+                </td>
+        </tr>
+        <tr>
+                <th>
+                        a || b
+                </th>
+                <td colspan="2">
+                    <details>
+                    <summary>	
+                            aまたはb
+                    </summary>
+                    <p>
+                        書き方
+                    </p>
+
+<h5 class="code">// Objectice-C</h5>
+<pre class="code">
+// aまたはb
+if (a || b) {
+    // 処理
+}
+</pre>
+<!--
+                    <p>
+                    （例）
+                    </p>
+
+<h5 class="code">// Objectice-C</h5>
+<pre class="code">
+// aまたはb
+if (a || b) {
+    // 処理
+}
+</pre>
+-->
+                    </details>
+                </td>
+        </tr>
+
+        <tr>
+                <th>
+                    !a
+                </th>
+                <td colspan="2">
+                    <details>
+                    <summary>	
+                            aではない
+                    </summary>
+                    <p>
+                        書き方
+                    </p>
+
+<h5 class="code">// Objectice-C</h5>
+<pre class="code">
+// aではない
+if (!a) {
+    // 処理
+}
+</pre>
+<!--
+                    <p>
+                    （例）
+                    </p>
+
+<h5 class="code">// Objectice-C</h5>
+<pre class="code">
+// aではない
+if (!a) {
+    // 処理
+}
+</pre>
+-->
+                    </details>
+                </td>
+        </tr>
+    </tbody>
+</table>
+
+    </section>
+        
+    <section>
+            <h2>定数</h2>
+            <p>
+                    定数を定義するには「#define」を使用します。
+            </p>
+
+<h5 class="code">// Objectice-C</h5>
+<pre class="code">
+// 定数CONSTを定義する
+#define CONST @"TEISU"
+</pre>
+            <p>
+                #defineは、ヘッダーファイルのインポート句の下ぐらいに記述します。
+            </p>
+    </section>
+
+<nav id="nav_basic">
+        <a href="./fanction.html#basic">関数</a>
+        <a href="./syntax.html#basic">基本構文</a>
+        <a href="./basic.html">基礎編</a>
+</nav>
+    
+    </main>
+        <footer>
+                <nav>
+                        <a class="main_menu" href="http://sunstripe-main.jp/">HOME</a> > <a class="main_menu" href="./index.html">素敵曜日 - Objective-C Lab</a> > <a class="main_menu" href="./reference.html">reference</a> <!-- <a class="main_menu" href="./help.html">HELP</a //-->
+                    </nav>
+                    <br />
+            <div style="clear:both;text-align:center;">                
+                &copy; 2011 - <script>
+                    var newDate = new Date();
+                    //年・月・日・曜日を取得する
+                    var year = newDate.getFullYear();
+                    document.write(year);
+                    </script> Team Sun Stripe.inc
+            </div>
+        </footer>
+    </body>
+</html>

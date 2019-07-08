@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ja" target="_blank">
+    <head>
+        <!-- meta name="robots" content="noindex, nofollow" /-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=10.0,user-scalable=yes" />
+        <meta charset="UTF-8"/>
+        <title>素敵曜日 - Objective-C Lab - リファレンス(reference)</title>
+        <link rel="stylesheet" type="text/css" href="./css/styles.css"/>
+        <style>
+        /* デザイン切り分け */
+        </style>
+        <script>
+        /* JavaScript切り分け */
+        </script>
+    </head>
+    <body>
+
+            <header><!-- header start //-->
+                
+                <nav id="header_nav"><!-- nav start -->
+    
+                    <menu id="header_nav_menu"><!-- menu start -->
+    
+                        <ul id="header_nav_menu_ul"><!-- ul start -->
+                            <li class="headerMenuList">
+                                <a class="baseMenu" href="http://sunstripe-main.jp/">
+                                    サンストライプ - HOME
+                                </a>
+                            </li>
+                            <li class="headerMenuList">
+                                <a class="baseMenu" href="http://sunstripe-main.jp/#programing">
+                                    プログラミング開発チーム
+                                </a>
+                            </li>
+                            <li class="headerMenuList">
+                                <a class="baseMenu" href="http://sunstripe.main.jp/ObjectiveCLab/">
+                                    素敵曜日 - Objective-C Lab
+                                </a>
+                            </li>
+                            <li class="headerMenuList">
+                                <a class="baseMenu" href="./basic.html">
+                                    basic
+                                </a>
+                            </li>
+                            <li class="headerMenuList">
+                                <a class="baseMenu" href="./expansion.html">
+                                    expansion
+                                </a></li>
+                            <li class="headerMenuList">
+                                <a class="baseMenu" href="./reference.html">
+                                    reference
+                                </a>
+                            </li>
+                        </ul><!-- ul start -->
+    
+                    </menu><!-- menu start -->
+    
+                </nav><!-- nav end -->
+    
+                <a href="./index.html"><h3>プログラミング開発チーム - サンストライプ - Objective-C Lab</h3></a>
+        </header><!-- header end //-->
+
+
+    <main id="main">
+
+            <h1>Objective-C Lab - リファレンス（reference）</h1>
+            <p>
+                Objective-Cの基礎知識について学んでいきます。
+            </p>
+
+            <nav>
+                    <a href="./index.html">Objective-C Lab</a>
+                    <a href="./basic.html">基礎編</a>
+                    <a href="./expansion.html">応用編</a>
+                    <a class="visited" href="./reference.html">リファレンス</a>
+            </nav>
+
+            <p>
+                ここでは、Objective-Cでプログラミングをする上での基礎知識をまとめてみました。
+                <br />
+                （Objective-C言語は基本がC言語なのでCを知っている方にとっては問題ないかと思います。）
+                <br />
+                <h3>リファレンス</h3>
+            </p>
+        <section>
+                
+                <h2>コメントについて</h2>
+                <p>
+                Objective-Cのコメントは、行単位のコメントとブロック単位のコメントの２種類が書けます。
+                
+                コメント記号	説明
+                //	行単位のコメントです。
+                「//」を書いた以降から行末までの文字はコメントとして認識されます。
+                /* xxx */	ブロック単位のコメントです。
+                「/*」と「*/」で囲まれた部分はコメントとして認識されます。
+                </p>
+        </section>
+        
+        <section>
+                <h2>ヘッダファイルとメインファイル</h2>
+                <p>
+                Objective-Cで特徴的なのが、１つのプログラムファイルがこのヘッダファイルとメインファイルの２つで構成されていることです。（OracleのPL/SQLなどを知っている方はイメージしやすいかと思います。）
+                
+                ヘッダーファイルにはメンバー変数と、定義するメソッド名（引数なども含む）のみ定義しておいて、メインファイルにはメソッドを定義するといった感じでコーディングします。
+                </p>
+        </section>
+
+        <section>                                    
+            <h2>メモリ解放について</h2>
+                <table>
+                        <caption>
+                                <strong>
+                                    メモリ解放について
+                                </strong>
+                                <details>
+                                <summary>
+                                    メモリ解放の解説
+                                </summary>
+                                <p>
+                                        ここではiPhoneOS上のObjective-Cについて解説しますが、iPhone上でのObjective-Cでは、ガーベジコレクションのようなメモリの自動解放はやってくれませんので、手動で解放するロジックをコーディングする必要があります。
+                                </p>
+                                </details>
+                        </caption>
+
+                        <thead>
+                        <tr>
+                            <th>
+                                関連メソッド
+                            </th>
+                            <th style="width: 80%;">
+                                表題
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td style="width: 80%;text-align: center;">
+                                説明(表題をタップして表示)
+                            </td>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <th>
+                                    retain
+                                </th>
+                                <td colspan="2">
+                                    <details>
+                                    <summary>
+                                            オブジェクトを確保する
+                                    </summary>
+                                    <p>
+                                            対象オブジェクトが必要な場合はretainで確保しておく                        
+                                        </p>
+                                    </details>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    release
+                                </th>
+                                <td colspan="2">
+                                    <details>
+                                    <summary>
+                                            オブジェクトを解放する
+                                    </summary>
+                                    <p>
+                                            対象オブジェクトが不要になった場合はreleaseで解放する                    
+                                        </p>
+                                    </details>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <th>
+                                    autorelease
+                                </th>
+                                <td colspan="2">
+                                    <details>
+                                    <summary>
+                                            オブジェクトの自動解放
+                                    </summary>
+                                    <p>
+                                            オブジェクトの解放は自動でされる                  
+                                        </p>
+                                    </details>
+                                </td>
+                            </tr>
+                        </tbody>
+                </table>
+
+                <p>
+                        メモリ解放についての基本的な考え方は以下の通りです。
+                </p>
+                
+                <ul>
+                    <li>
+                            [[xxx alloc] init];　のようにオブジェクトを生成した場合はreleaseが必要。
+                    </li>
+                    <li>
+                            [[[xxx alloc] init] autorelease];　のようにオブジェクトを生成した場合はreleaseは不要。
+                    </li>
+                    <li>
+                            [[xxx alloc] initWith～];　のようにオブジェクトを生成した場合はreleaseが必要。
+                    </li>
+                    <li>
+                            [[xxx alloc] xxxWith～];　のようにオブジェクトを生成した場合はreleaseは不要。
+                            <br />
+                            （autoreleaseされる）
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                    <h2>メソッドの書き方</h2>
+                    <p>
+                            Objective-Cでのメソッドの書き方は、他の一般的な言語に比べて特殊です。（個人的意見ですが・・）
+                            <br />
+                            まずは同じ処理をするJavaとObjective-Cのメソッドを比べてみます。
+                    </p>
+            </section>
+
+            <section>  
+<h5 class="code">// Java</h5>
+<pre class="code">
+private String getAppendValue(String str1, String str2){
+    return str1 + str2;
+}
+</pre>
+
+<h5 class="code">// Objective-C</h5>
+- (NSString*) getAppendValue:(NSString*)str1 appendStr:(NSString*)str2{
+    return [str1 stringByAppendingString:str2];
+}
+</pre>
+                    <p>
+                        どうでしょうか？引数の書き方が全然違いますね。
+                    </p>
+                    <p>
+                            一般的な言語では、引数は括弧の中にカンマで区切って羅列していくものが多いと思いますが、Objective-Cでは、引数１つ１つに引数名（上の例だと「appendStr」の部分です。）をつけて、スペースで区切って羅列していきます。
+                    </p>
+                    <p>
+                            他の言語に慣れている方は、ちょっととっつきにくいかもしれません。
+                    </p>
+            </section>
+
+            <section>
+                    <h2>メソッドの呼び出し方</h2>
+                    <p>
+                            メソッドの呼び出し方も変わっています。
+                            <br />
+                            JavaとObjective-Cのメソッドの呼び出し方を比べてみましょう。
+                    </p>
+            </section>
+
+            <section>  
+                    
+<h5 class="code">// Java</h5>
+<pre class="code">
+String str = calc.getValue();
+</pre>
+                    
+<h5 class="code">// Objective-C</h5>
+<pre class="code">
+NSString *str = [calc getValue];
+</pre>
+<p>
+        どうでしょうか？Javaではオブジェクト変数にピリオドで区切ってメソッドを書くことでメソッドの呼び出しになりますが、Objective-Cでは、オブジェクト変数とメソッドはスペースで区切り、それをさらに括弧"["と"]"で囲うことによりメソッドの呼び出しになります。
+</p>
+<p>
+        ※厳密に言えば、Objective-Cではメソッドの呼び出しという概念は無く、メソッドの通知をすることでメソッドを実行します。
+</p>
+<p>
+        まあ、これも慣れが必要ですね。
+    </p>
+</section>
+
+    </main>
+       
+    <footer>
+            <nav>
+                    <a class="main_menu" href="http://sunstripe-main.jp/">HOME</a> > <a class="main_menu" href="./index.html">素敵曜日 - Objective-C Lab</a> > <a class="main_menu" href="./reference.html">reference</a> <!-- <a class="main_menu" href="./help.html">HELP</a //-->
+                </nav>
+                <br />
+            <div style="clear:both;text-align:center;">                
+                &copy; 2011 - <script>
+                    var newDate = new Date();
+                    //年・月・日・曜日を取得する
+                    var year = newDate.getFullYear();
+                    document.write(year);
+                    </script> Team Sun Stripe.inc
+            </div>
+        </footer>
+
+    </body>
+</html>
+        
