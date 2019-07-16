@@ -8,31 +8,14 @@
 
 #import "LaunchScreenViewController.h"
 
-@interface UtilStoryboard : UIStoryboard
+@implementation UIStoryboard (Utils)
 
-extern const NSString *Main_storyboard;
-
-+ (UtilStoryboard *)shared;
-
-/// 遷移先のLaunchScreenViewControllerをStoryBoardをもとに作成
-- (LaunchScreenViewController *)launchScreenViewController;
-/// 遷移先のMainViewControllerをStoryBoardをもとに作成
-- (MainViewController *)mainViewController;
-
-@end
-
-@interface UtilStoryboard ()
-
-@end
-
-@implementation UtilStoryboard
-
-static UtilStoryboard *shared_ = nil;
+static UIStoryboard *shared_ = nil;
 const NSString *Main_storyboard = @"Main";
 
-+ (UtilStoryboard *)shared{
++ (UIStoryboard *)shared{
     if (!shared_) {
-        shared_ = [UtilStoryboard new];
+        shared_ = [UIStoryboard new];
     }
     return shared_;
 }
@@ -61,7 +44,6 @@ const NSString *Main_storyboard = @"Main";
     return [self viewControllerStoryboardName:name viewController:nil];
 }
 
-
 - (id)init
 {
     self = [super init];
@@ -72,11 +54,11 @@ const NSString *Main_storyboard = @"Main";
 }
 
 - (LaunchScreenViewController *)launchScreenViewController {
-    return [UtilStoryboard viewControllerStoryboardName:(NSString *) Main_storyboard];
+    return [UIStoryboard viewControllerStoryboardName:(NSString *) Main_storyboard];
 }
 
 - (MainViewController *)mainViewController {
-    return [UtilStoryboard viewControllerStoryboardName:(NSString *) Main_storyboard
+    return [UIStoryboard viewControllerStoryboardName:(NSString *) Main_storyboard
                                          viewController:[MainViewController class]];
 }
 
@@ -136,7 +118,7 @@ const NSString *Main_storyboard = @"Main";
 
 - (void)autoChangeNextViewController {
     
-    MainViewController *mainViewController = UtilStoryboard.shared.mainViewController;
+    MainViewController *mainViewController = UIStoryboard.shared.mainViewController;
     if (self.navigationController) {
         // 画面をPUSHで遷移させる
         [self.navigationController pushViewController:mainViewController animated:YES];

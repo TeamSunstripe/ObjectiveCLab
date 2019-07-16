@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,15 +15,15 @@
             <objects>
                 <tableViewController storyboardIdentifier="LearnListViewController" title="LearnListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BrS-dd-ZaF" customClass="LearnListViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="V9v-ct-wdQ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LearnListCell" id="7o2-IG-Enn">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="768" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7o2-IG-Enn" id="b2W-WF-4yA">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -56,7 +56,7 @@
                 <navigationController storyboardIdentifier="LearnListNavigationController" title="LearnListNavigationController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nDi-f5-W0q" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="oo2-mh-ACC"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pbl-A7-Ky0">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="768" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -72,17 +72,17 @@
             <objects>
                 <viewController storyboardIdentifier="MainViewController" title="Main View Controller" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="MainViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="MV1-GH-Yxn">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="960"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lms-Wc-tOj">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="187.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="306.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hkz-d5-kso" customClass="CommonButton">
-                                                <rect key="frame" x="0.0" y="0.0" width="188" height="187.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="306.5"/>
                                                 <color key="backgroundColor" red="1" green="0.8027249179" blue="0.35119523149999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                                 <state key="normal" title="Tutorial">
@@ -93,7 +93,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IjM-s4-GCU" customClass="CommonButton">
-                                                <rect key="frame" x="188" y="0.0" width="187" height="187.5"/>
+                                                <rect key="frame" x="187.5" y="0.0" width="187.5" height="306.5"/>
                                                 <color key="backgroundColor" red="1" green="0.26419462960000001" blue="0.49616822589999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                                 <state key="normal" title="Common">
@@ -110,10 +110,10 @@
                                         <viewLayoutGuide key="safeArea" id="A4G-rr-yRk"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f3N-gx-ewB">
-                                        <rect key="frame" x="0.0" y="187.5" width="375" height="187"/>
+                                        <rect key="frame" x="0.0" y="306.5" width="375" height="306"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jnJ-QN-OnM" customClass="CommonButton">
-                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="187"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="306"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                                 <state key="normal" title="Learn"/>
                                                 <connections>
@@ -121,10 +121,10 @@
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="laa-Oc-JIq">
-                                                <rect key="frame" x="187.5" y="0.0" width="187.5" height="187"/>
+                                                <rect key="frame" x="187.5" y="0.0" width="187.5" height="306"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eaz-Ld-30M" customClass="CommonButton">
-                                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="93.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="153"/>
                                                         <color key="backgroundColor" red="0.83888989686965942" green="0.47368177790944482" blue="0.027391739248248729" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                                         <state key="normal" title="Basic">
@@ -135,7 +135,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3eT-Zk-n88" customClass="CommonButton">
-                                                        <rect key="frame" x="0.0" y="93.5" width="187.5" height="93.5"/>
+                                                        <rect key="frame" x="0.0" y="153" width="187.5" height="153"/>
                                                         <color key="backgroundColor" red="0.049267039142391125" green="0.053213206509771391" blue="0.83888989686965942" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                                         <state key="normal" title="Expansion">
@@ -156,10 +156,10 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DPF-YL-gG6">
-                                        <rect key="frame" x="0.0" y="374.5" width="375" height="187.5"/>
+                                        <rect key="frame" x="0.0" y="612.5" width="375" height="306.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NuV-WC-gle" customClass="CommonButton">
-                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="187.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="306.5"/>
                                                 <color key="backgroundColor" red="0.98262438600000002" green="0.99239662029999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                                 <state key="normal" title="Link">
@@ -170,7 +170,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XyF-HW-fdQ" customClass="CommonButton">
-                                                <rect key="frame" x="187.5" y="0.0" width="187.5" height="187.5"/>
+                                                <rect key="frame" x="187.5" y="0.0" width="187.5" height="306.5"/>
                                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                                 <state key="normal" title="Setting"/>
@@ -184,7 +184,7 @@
                                         </constraints>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rRL-au-3Bg" customClass="CommonLabel">
-                                        <rect key="frame" x="0.0" y="562" width="375" height="41"/>
+                                        <rect key="frame" x="0.0" y="919" width="375" height="41"/>
                                         <string key="text">(C) 2011 - 2018 Team Sun Stripe
 http://sunstripe-main.jp/</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -223,17 +223,17 @@ http://sunstripe-main.jp/</string>
             <objects>
                 <viewController storyboardIdentifier="MainViewController_Common" title="Common Main View Controller" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4Wl-4P-5ka" customClass="MainViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6GX-wf-erz">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dFt-5p-TX4">
-                                <rect key="frame" x="0.0" y="98" width="375" height="569"/>
+                                <rect key="frame" x="0.0" y="98" width="768" height="926"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="K8b-Dp-eKI">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="569"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="926"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y0X-Td-hJ4" customClass="CommonButton">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="114"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="768" height="185.5"/>
                                                 <color key="backgroundColor" red="1" green="0.26419462960000001" blue="0.49616822589999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <state key="normal" title="CommonViewController">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -244,7 +244,7 @@ http://sunstripe-main.jp/</string>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8FT-Oc-xJc" customClass="CommonButton">
-                                                <rect key="frame" x="0.0" y="114" width="375" height="113.5"/>
+                                                <rect key="frame" x="0.0" y="185.5" width="768" height="185"/>
                                                 <color key="backgroundColor" red="0.0" green="0.3079025293277195" blue="0.64147506476683935" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="CommonListViewController">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -255,7 +255,7 @@ http://sunstripe-main.jp/</string>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cl4-GM-dPt" customClass="CommonButton">
-                                                <rect key="frame" x="0.0" y="227.5" width="375" height="114"/>
+                                                <rect key="frame" x="0.0" y="370.5" width="768" height="185"/>
                                                 <color key="backgroundColor" red="1" green="0.8027249179" blue="0.35119523149999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <state key="normal" title="CommonNavigationController"/>
                                                 <connections>
@@ -264,7 +264,7 @@ http://sunstripe-main.jp/</string>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Etb-XO-48d" customClass="CommonButton">
-                                                <rect key="frame" x="0.0" y="341.5" width="375" height="113.5"/>
+                                                <rect key="frame" x="0.0" y="555.5" width="768" height="185"/>
                                                 <color key="backgroundColor" red="1" green="0.0" blue="0.73353732670000005" alpha="0.65787301939999998" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="CommonTabBarController"/>
                                                 <connections>
@@ -273,7 +273,7 @@ http://sunstripe-main.jp/</string>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OzW-U8-sIy" customClass="CommonButton">
-                                                <rect key="frame" x="0.0" y="455" width="375" height="114"/>
+                                                <rect key="frame" x="0.0" y="740.5" width="768" height="185.5"/>
                                                 <color key="backgroundColor" red="0.8862745098" green="0.33725490200000002" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
                                                 <state key="normal" title="CommonCollectionViewController">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -345,15 +345,15 @@ http://sunstripe-main.jp/</string>
             <objects>
                 <tableViewController storyboardIdentifier="LinkListViewController" title="LinkListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jL7-z4-3ae" customClass="LinkListViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="zJ3-EC-mQq">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LinkListCell" id="ojA-f3-aTg">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="768" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ojA-f3-aTg" id="C2r-dc-EFu">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -386,7 +386,7 @@ http://sunstripe-main.jp/</string>
                 <navigationController storyboardIdentifier="LinkListNavigationController" title="LinkListNavigationController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nOY-iS-OkZ" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="nid-ma-Lji"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eng-RN-Rxh">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="768" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -403,7 +403,7 @@ http://sunstripe-main.jp/</string>
                 <navigationController storyboardIdentifier="BasicNavigationController" title="BasicNavigationController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="80D-uK-gpX" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="giO-wy-DRS"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FwZ-hA-Jnx">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="768" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -419,7 +419,7 @@ http://sunstripe-main.jp/</string>
             <objects>
                 <navigationController storyboardIdentifier="CommonNavigationController" title="CommonNavigationController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="meY-xU-d97" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cJ7-Rk-Tj6">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="768" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -435,15 +435,15 @@ http://sunstripe-main.jp/</string>
             <objects>
                 <viewController storyboardIdentifier="BasicViewController" title="BasicMainViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="znX-dp-7M9" customClass="BasicViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DJH-5T-2Ce">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CmS-Df-3VG">
-                                <rect key="frame" x="0.0" y="98" width="375" height="537"/>
+                                <rect key="frame" x="0.0" y="98" width="768" height="894"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGA-ey-7bb">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="46"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="46"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="CommonViewController"/>
                                         <connections>
@@ -452,7 +452,7 @@ http://sunstripe-main.jp/</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bNk-KU-m2G">
-                                        <rect key="frame" x="0.0" y="54" width="375" height="46"/>
+                                        <rect key="frame" x="0.0" y="54" width="768" height="46"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="CommonListViewController"/>
                                         <connections>
@@ -461,7 +461,7 @@ http://sunstripe-main.jp/</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XKO-To-4UK">
-                                        <rect key="frame" x="0.0" y="108" width="375" height="46"/>
+                                        <rect key="frame" x="0.0" y="108" width="768" height="46"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="CommonNavigationController"/>
                                         <connections>
@@ -470,7 +470,7 @@ http://sunstripe-main.jp/</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mBz-py-EdX">
-                                        <rect key="frame" x="0.0" y="162" width="375" height="46"/>
+                                        <rect key="frame" x="0.0" y="162" width="768" height="46"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="CommonTabBarController"/>
                                         <connections>
@@ -479,7 +479,7 @@ http://sunstripe-main.jp/</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i8Y-Pj-jtD">
-                                        <rect key="frame" x="0.0" y="216" width="375" height="46"/>
+                                        <rect key="frame" x="0.0" y="216" width="768" height="46"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="CommonCollectionViewController"/>
                                         <connections>
@@ -517,15 +517,15 @@ http://sunstripe-main.jp/</string>
             <objects>
                 <tableViewController storyboardIdentifier="SettingListViewController" title="SettingListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="wne-g0-hr4" customClass="SettingListViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="4XN-BW-8eF">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SettingListCell" id="egV-za-KJ1">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="768" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="egV-za-KJ1" id="YTw-vM-VuB">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -558,7 +558,7 @@ http://sunstripe-main.jp/</string>
                 <navigationController storyboardIdentifier="SettingListNavigationController" title="SettingListNavigationController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="PmL-Xg-K3q" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="Qgy-aq-dAr"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fDB-tH-VdC">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="768" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -575,7 +575,7 @@ http://sunstripe-main.jp/</string>
                 <navigationController storyboardIdentifier="ExpansionNavigationController" title="ExpansionNavigationController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gBF-6n-nBa" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="FzA-Q9-YLE"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="d6r-ci-gre">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="768" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -591,15 +591,15 @@ http://sunstripe-main.jp/</string>
             <objects>
                 <viewController storyboardIdentifier="ExpansionViewController" title="ExapnsionMainViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5zd-1g-ehV" customClass="ExpansionViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MER-np-foV">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xEg-HG-TKt">
-                                <rect key="frame" x="0.0" y="98" width="375" height="537"/>
+                                <rect key="frame" x="0.0" y="98" width="768" height="894"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H6w-c0-cQm">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="46"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="46"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="CommonViewController"/>
                                         <connections>
@@ -608,7 +608,7 @@ http://sunstripe-main.jp/</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pbj-Dl-iBa">
-                                        <rect key="frame" x="0.0" y="54" width="375" height="46"/>
+                                        <rect key="frame" x="0.0" y="54" width="768" height="46"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="CommonListViewController"/>
                                         <connections>
@@ -617,7 +617,7 @@ http://sunstripe-main.jp/</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AE0-jF-hrw">
-                                        <rect key="frame" x="0.0" y="108" width="375" height="46"/>
+                                        <rect key="frame" x="0.0" y="108" width="768" height="46"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="CommonNavigationController"/>
                                         <connections>
@@ -626,7 +626,7 @@ http://sunstripe-main.jp/</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qgy-bm-Gqo">
-                                        <rect key="frame" x="0.0" y="162" width="375" height="46"/>
+                                        <rect key="frame" x="0.0" y="162" width="768" height="46"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="CommonTabBarController"/>
                                         <connections>
@@ -635,7 +635,7 @@ http://sunstripe-main.jp/</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mbd-SQ-cfg">
-                                        <rect key="frame" x="0.0" y="216" width="375" height="46"/>
+                                        <rect key="frame" x="0.0" y="216" width="768" height="46"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="CommonCollectionViewController"/>
                                         <connections>
@@ -673,15 +673,15 @@ http://sunstripe-main.jp/</string>
             <objects>
                 <tableViewController storyboardIdentifier="TutorialListViewController" title="TutorialListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tHt-Uu-2o5" customClass="TutorialListViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="T1N-9W-VeE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TutorialListCell" id="e8J-41-GrQ">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="768" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="e8J-41-GrQ" id="dBE-Kc-6lr">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -714,7 +714,7 @@ http://sunstripe-main.jp/</string>
                 <navigationController storyboardIdentifier="TutorialListNavigationController" title="TutorialNavigationController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1mc-5u-bg4" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="i73-RN-frC"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4O8-cw-fjQ">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="768" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
