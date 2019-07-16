@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>header</key>
+		<dict>
+			<key>title</key>
+			<string>Objective-C基礎知識</string>
+		</dict>
+		<key>items</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>Objective-C基本 - start</string>
+				<key>URL</key>
+				<string>http://sunstripe.main.jp/ObjectiveCLab/basicStart.html#basic</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>データ型 - datatype</string>
+				<key>URL</key>
+				<string>http://sunstripe.main.jp/ObjectiveCLab/datatype.html#basic</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>関数 - fanction</string>
+				<key>URL</key>
+				<string>http://sunstripe.main.jp/ObjectiveCLab/fanction.html#basic</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>基本構文 - syntax</string>
+				<key>URL</key>
+				<string>http://sunstripe.main.jp/ObjectiveCLab/syntax.html#basic</string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>

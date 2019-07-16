@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>header</key>
+		<dict>
+			<key>title</key>
+			<string>チーム</string>
+		</dict>
+		<key>items</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>サンストライプ</string>
+				<key>URL</key>
+				<string>http://sunstripe-main.jp/</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Twitter：サンストライプ</string>
+				<key>URL</key>
+				<string>https://twitter.com/sunstripe2011</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>header</key>
+		<dict>
+			<key>title</key>
+			<string>関連サイト</string>
+		</dict>
+		<key>items</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>Objective-C Lab</string>
+				<key>URL</key>
+				<string>http://sunstripe.main.jp/ObjectiveCLab</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Swift Lab</string>
+				<key>URL</key>
+				<string>http://sunstripe.main.jp/SwiftLab</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>JavaScript Lab</string>
+				<key>URL</key>
+				<string>http://sunstripe.main.jp/JavaScriptLab</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>HTML Lab</string>
+				<key>URL</key>
+				<string>http://sunstripe.main.jp/HTMLLab</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>PHP Lab</string>
+				<key>URL</key>
+				<string>http://sunstripe.main.jp/PHPLab</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>CSS Lab</string>
+				<key>URL</key>
+				<string>http://sunstripe.main.jp/CSSLab</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Desgin Lab</string>
+				<key>URL</key>
+				<string>http://sunstripe.main.jp/DesginLab</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>header</key>
+		<dict>
+			<key>title</key>
+			<string>サンストライプ</string>
+		</dict>
+		<key>items</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>サンストライプ</string>
+				<key>URL</key>
+				<string>http://sunstripe-main.jp/</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>header</key>
+		<dict>
+			<key>title</key>
+			<string>事業</string>
+		</dict>
+		<key>items</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>芸能：アサインプロモーション</string>
+				<key>URL</key>
+				<string>http://assignpromotion.sunstripe-main.jp</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>メディア：THE メディア</string>
+				<key>URL</key>
+				<string>http://the.themedia.jp/</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>THE CARD GAME</string>
+				<key>URL</key>
+				<string>http://stage-card.karaage.site/card.html</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>グッズ販売：THE CARD GAME</string>
+				<key>URL</key>
+				<string>https://thecardgame.base.shop/</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Twitter：THE CARD GAME</string>
+				<key>URL</key>
+				<string>https://twitter.com/thecardgame_JP</string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>
