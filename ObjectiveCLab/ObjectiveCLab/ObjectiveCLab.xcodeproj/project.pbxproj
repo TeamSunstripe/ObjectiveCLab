@@ -225,9 +225,9 @@
 		57572FC422DE13E700B9B139 /* Tutorial */ = {
 			isa = PBXGroup;
 			children = (
-				57572FC522DE13E700B9B139 /* TutorialListViewController.m */,
 				57572FC622DE13E700B9B139 /* TutorialList.plist */,
 				57572FC722DE13E700B9B139 /* TutorialListViewController.h */,
+				57572FC522DE13E700B9B139 /* TutorialListViewController.m */,
 			);
 			name = Tutorial;
 			path = ObjectiveCLab/app/Tutorial;
@@ -236,8 +236,8 @@
 		57572FC822DE13E700B9B139 /* Learn */ = {
 			isa = PBXGroup;
 			children = (
-				57572FC922DE13E700B9B139 /* LearnListViewController.h */,
 				57572FCA22DE13E700B9B139 /* LearnList.plist */,
+				57572FC922DE13E700B9B139 /* LearnListViewController.h */,
 				57572FCB22DE13E700B9B139 /* LearnListViewController.m */,
 			);
 			name = Learn;
@@ -326,9 +326,9 @@
 		5757300622DE13E700B9B139 /* Link */ = {
 			isa = PBXGroup;
 			children = (
+				5757300922DE13E700B9B139 /* LinkList.plist */,
 				5757300722DE13E700B9B139 /* LinkListViewController.h */,
 				5757300822DE13E700B9B139 /* LinkListViewController.m */,
-				5757300922DE13E700B9B139 /* LinkList.plist */,
 			);
 			name = Link;
 			path = ObjectiveCLab/app/Link;
