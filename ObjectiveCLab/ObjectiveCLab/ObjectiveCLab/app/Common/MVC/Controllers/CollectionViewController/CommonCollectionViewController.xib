@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CommonCollectionViewController">
+            <connections>
+                <outlet property="commonNavigationBar" destination="Sj2-zw-VVW" id="QzS-E7-TS2"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewController id="3wm-WM-Zol" customClass="CommonCollectionViewController">
+            <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" id="5BI-1l-inY">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="9Oz-jb-fUD">
+                    <size key="itemSize" width="50" height="50"/>
+                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                </collectionViewFlowLayout>
+                <connections>
+                    <outlet property="dataSource" destination="3wm-WM-Zol" id="pvu-Jn-scY"/>
+                    <outlet property="delegate" destination="3wm-WM-Zol" id="wmh-oc-Ku4"/>
+                </connections>
+            </collectionView>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics"/>
+            <connections>
+                <outlet property="collectionView" destination="5BI-1l-inY" id="Sg7-AM-VMg"/>
+                <outlet property="commonNavigationBar" destination="Sj2-zw-VVW" id="O7X-Rh-0ll"/>
+            </connections>
+        </collectionViewController>
+        <navigationBar contentMode="scaleToFill" id="Sj2-zw-VVW" customClass="CommonNavigationBar">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="78"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+            <items>
+                <navigationItem title="Title" prompt="Prompt" id="UOo-tI-5MG">
+                    <barButtonItem key="backBarButtonItem" title="Back" id="QGa-Ud-uSc">
+                        <connections>
+                            <action selector="tapBackButton:" destination="Sj2-zw-VVW" id="zHd-bu-nWn"/>
+                        </connections>
+                    </barButtonItem>
+                    <barButtonItem key="leftBarButtonItem" title="TOP" id="scy-Fi-fmF">
+                        <connections>
+                            <action selector="tapTopButton:" destination="Sj2-zw-VVW" id="Gf5-8b-mpN"/>
+                        </connections>
+                    </barButtonItem>
+                    <barButtonItem key="rightBarButtonItem" title="MENU" id="klv-rR-wSz">
+                        <connections>
+                            <action selector="tapMenuButton:" destination="Sj2-zw-VVW" id="IzB-xl-7ZI"/>
+                        </connections>
+                    </barButtonItem>
+                </navigationItem>
+            </items>
+            <connections>
+                <outlet property="commonBackBarButtonItem" destination="QGa-Ud-uSc" id="3PN-MI-TTV"/>
+                <outlet property="commonLeftBarButtonItem" destination="scy-Fi-fmF" id="kGY-aH-g6i"/>
+                <outlet property="commonRightBarButtonItem" destination="klv-rR-wSz" id="5iw-8c-3vn"/>
+                <outlet property="navigationTitle" destination="UOo-tI-5MG" id="MVE-xj-5PC"/>
+            </connections>
+            <point key="canvasLocation" x="355" y="-139"/>
+        </navigationBar>
+        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ghe-eE-g5l" customClass="CommonLabel">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="42"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+            <string key="text">(C) 2011 - 2018 Team Sun Stripe
+http://sunstripe-main.jp/</string>
+            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+            <nil key="textColor"/>
+            <nil key="highlightedColor"/>
+        </label>
+    </objects>
+</document>

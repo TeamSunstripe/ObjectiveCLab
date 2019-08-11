@@ -7,9 +7,52 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5748C37E22CFACE50009981A /* LaunchScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5748C37D22CFACE50009981A /* LaunchScreenViewController.m */; };
+		5757301222DE13E800B9B139 /* TutorialListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57572FC522DE13E700B9B139 /* TutorialListViewController.m */; };
+		5757301322DE13E800B9B139 /* TutorialList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 57572FC622DE13E700B9B139 /* TutorialList.plist */; };
+		5757301422DE13E800B9B139 /* LearnList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 57572FCA22DE13E700B9B139 /* LearnList.plist */; };
+		5757301522DE13E800B9B139 /* LearnListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57572FCB22DE13E700B9B139 /* LearnListViewController.m */; };
+		5757301622DE13E800B9B139 /* SettingListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57572FCD22DE13E700B9B139 /* SettingListViewController.m */; };
+		5757301722DE13E800B9B139 /* SettingList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 57572FCF22DE13E700B9B139 /* SettingList.plist */; };
+		5757301822DE13E800B9B139 /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 57572FD122DE13E700B9B139 /* Common.m */; };
+		5757301922DE13E800B9B139 /* CommonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 57572FD422DE13E700B9B139 /* CommonModel.m */; };
+		5757301A22DE13E800B9B139 /* CommonCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57572FD822DE13E700B9B139 /* CommonCollectionViewController.xib */; };
+		5757301B22DE13E800B9B139 /* CommonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57572FD922DE13E700B9B139 /* CommonViewController.xib */; };
+		5757301C22DE13E800B9B139 /* CommonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57572FDA22DE13E700B9B139 /* CommonViewController.m */; };
+		5757301D22DE13E800B9B139 /* CommonListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57572FDB22DE13E700B9B139 /* CommonListViewController.m */; };
+		5757301E22DE13E800B9B139 /* CommonTabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57572FDC22DE13E700B9B139 /* CommonTabBarController.xib */; };
+		5757301F22DE13E800B9B139 /* CommonNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57572FDD22DE13E700B9B139 /* CommonNavigationController.m */; };
+		5757302022DE13E800B9B139 /* CommonTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57572FDE22DE13E700B9B139 /* CommonTabBarController.m */; };
+		5757302122DE13E800B9B139 /* CommonCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57572FDF22DE13E700B9B139 /* CommonCollectionViewController.m */; };
+		5757302222DE13E800B9B139 /* CommonNavigationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57572FE022DE13E700B9B139 /* CommonNavigationController.xib */; };
+		5757302322DE13E800B9B139 /* CommonListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57572FE322DE13E700B9B139 /* CommonListViewController.xib */; };
+		5757302422DE13E800B9B139 /* CommonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57572FE722DE13E700B9B139 /* CommonView.xib */; };
+		5757302522DE13E800B9B139 /* CommonLabel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57572FE922DE13E700B9B139 /* CommonLabel.xib */; };
+		5757302622DE13E800B9B139 /* CommonListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 57572FEA22DE13E700B9B139 /* CommonListView.m */; };
+		5757302722DE13E800B9B139 /* CommonImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57572FEC22DE13E700B9B139 /* CommonImageView.xib */; };
+		5757302822DE13E800B9B139 /* CommonScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 57572FED22DE13E700B9B139 /* CommonScrollView.m */; };
+		5757302922DE13E800B9B139 /* CommonListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 57572FEF22DE13E700B9B139 /* CommonListViewCell.m */; };
+		5757302A22DE13E800B9B139 /* CommonListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57572FF022DE13E700B9B139 /* CommonListView.xib */; };
+		5757302B22DE13E800B9B139 /* CommonSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 57572FF322DE13E700B9B139 /* CommonSegmentedControl.m */; };
+		5757302C22DE13E800B9B139 /* CommonImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 57572FF422DE13E700B9B139 /* CommonImageView.m */; };
+		5757302D22DE13E800B9B139 /* CommonButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57572FF622DE13E700B9B139 /* CommonButton.xib */; };
+		5757302E22DE13E800B9B139 /* CommonNavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57572FF722DE13E700B9B139 /* CommonNavigationBar.xib */; };
+		5757302F22DE13E800B9B139 /* CommonSegmentedControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57572FF922DE13E700B9B139 /* CommonSegmentedControl.xib */; };
+		5757303022DE13E800B9B139 /* CommonLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 57572FFA22DE13E700B9B139 /* CommonLabel.m */; };
+		5757303122DE13E800B9B139 /* CommonListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57572FFC22DE13E700B9B139 /* CommonListViewCell.xib */; };
+		5757303222DE13E800B9B139 /* CommonNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 57572FFD22DE13E700B9B139 /* CommonNavigationBar.m */; };
+		5757303322DE13E800B9B139 /* CommonButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 57572FFF22DE13E700B9B139 /* CommonButton.m */; };
+		5757303422DE13E800B9B139 /* CommonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5757300022DE13E700B9B139 /* CommonView.m */; };
+		5757303522DE13E800B9B139 /* CommonScrollView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5757300122DE13E700B9B139 /* CommonScrollView.xib */; };
+		5757303622DE13E800B9B139 /* ExpansionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5757300522DE13E700B9B139 /* ExpansionViewController.m */; };
+		5757303722DE13E800B9B139 /* LinkListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5757300822DE13E700B9B139 /* LinkListViewController.m */; };
+		5757303822DE13E800B9B139 /* LinkList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5757300922DE13E700B9B139 /* LinkList.plist */; };
+		5757303922DE13E800B9B139 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5757300B22DE13E800B9B139 /* Main.storyboard */; };
+		5757303A22DE13E800B9B139 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5757300D22DE13E800B9B139 /* MainViewController.m */; };
+		5757303B22DE13E800B9B139 /* BasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5757301022DE13E800B9B139 /* BasicViewController.m */; };
+		5757303F22DE141A00B9B139 /* SimpleListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5757303D22DE141900B9B139 /* SimpleListViewController.m */; };
 		F65D218D22B9CD84005E37CA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F65D218C22B9CD84005E37CA /* AppDelegate.m */; };
-		F65D219022B9CD84005E37CA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F65D218F22B9CD84005E37CA /* ViewController.m */; };
-		F65D219322B9CD84005E37CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F65D219122B9CD84005E37CA /* Main.storyboard */; };
+		F65D219322B9CD84005E37CA /* StartUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F65D219122B9CD84005E37CA /* StartUp.storyboard */; };
 		F65D219622B9CD84005E37CA /* ObjectiveCLab.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F65D219422B9CD84005E37CA /* ObjectiveCLab.xcdatamodeld */; };
 		F65D219822B9CD87005E37CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F65D219722B9CD87005E37CA /* Assets.xcassets */; };
 		F65D219B22B9CD87005E37CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F65D219922B9CD87005E37CA /* LaunchScreen.storyboard */; };
@@ -36,12 +79,79 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5748C37C22CFACE50009981A /* LaunchScreenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchScreenViewController.h; sourceTree = "<group>"; };
+		5748C37D22CFACE50009981A /* LaunchScreenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchScreenViewController.m; sourceTree = "<group>"; };
+		57572FC522DE13E700B9B139 /* TutorialListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialListViewController.m; sourceTree = "<group>"; };
+		57572FC622DE13E700B9B139 /* TutorialList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TutorialList.plist; sourceTree = "<group>"; };
+		57572FC722DE13E700B9B139 /* TutorialListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorialListViewController.h; sourceTree = "<group>"; };
+		57572FC922DE13E700B9B139 /* LearnListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearnListViewController.h; sourceTree = "<group>"; };
+		57572FCA22DE13E700B9B139 /* LearnList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LearnList.plist; sourceTree = "<group>"; };
+		57572FCB22DE13E700B9B139 /* LearnListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearnListViewController.m; sourceTree = "<group>"; };
+		57572FCD22DE13E700B9B139 /* SettingListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingListViewController.m; sourceTree = "<group>"; };
+		57572FCE22DE13E700B9B139 /* SettingListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingListViewController.h; sourceTree = "<group>"; };
+		57572FCF22DE13E700B9B139 /* SettingList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SettingList.plist; sourceTree = "<group>"; };
+		57572FD122DE13E700B9B139 /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
+		57572FD422DE13E700B9B139 /* CommonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonModel.m; sourceTree = "<group>"; };
+		57572FD522DE13E700B9B139 /* CommonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonModel.h; sourceTree = "<group>"; };
+		57572FD722DE13E700B9B139 /* CommonCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonCollectionViewController.h; sourceTree = "<group>"; };
+		57572FD822DE13E700B9B139 /* CommonCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommonCollectionViewController.xib; sourceTree = "<group>"; };
+		57572FD922DE13E700B9B139 /* CommonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommonViewController.xib; sourceTree = "<group>"; };
+		57572FDA22DE13E700B9B139 /* CommonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonViewController.m; sourceTree = "<group>"; };
+		57572FDB22DE13E700B9B139 /* CommonListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonListViewController.m; sourceTree = "<group>"; };
+		57572FDC22DE13E700B9B139 /* CommonTabBarController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommonTabBarController.xib; sourceTree = "<group>"; };
+		57572FDD22DE13E700B9B139 /* CommonNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonNavigationController.m; sourceTree = "<group>"; };
+		57572FDE22DE13E700B9B139 /* CommonTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonTabBarController.m; sourceTree = "<group>"; };
+		57572FDF22DE13E700B9B139 /* CommonCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonCollectionViewController.m; sourceTree = "<group>"; };
+		57572FE022DE13E700B9B139 /* CommonNavigationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommonNavigationController.xib; sourceTree = "<group>"; };
+		57572FE122DE13E700B9B139 /* CommonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonViewController.h; sourceTree = "<group>"; };
+		57572FE222DE13E700B9B139 /* CommonListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonListViewController.h; sourceTree = "<group>"; };
+		57572FE322DE13E700B9B139 /* CommonListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommonListViewController.xib; sourceTree = "<group>"; };
+		57572FE422DE13E700B9B139 /* CommonTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonTabBarController.h; sourceTree = "<group>"; };
+		57572FE522DE13E700B9B139 /* CommonNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonNavigationController.h; sourceTree = "<group>"; };
+		57572FE722DE13E700B9B139 /* CommonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommonView.xib; sourceTree = "<group>"; };
+		57572FE822DE13E700B9B139 /* CommonImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonImageView.h; sourceTree = "<group>"; };
+		57572FE922DE13E700B9B139 /* CommonLabel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommonLabel.xib; sourceTree = "<group>"; };
+		57572FEA22DE13E700B9B139 /* CommonListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonListView.m; sourceTree = "<group>"; };
+		57572FEB22DE13E700B9B139 /* CommonNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonNavigationBar.h; sourceTree = "<group>"; };
+		57572FEC22DE13E700B9B139 /* CommonImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommonImageView.xib; sourceTree = "<group>"; };
+		57572FED22DE13E700B9B139 /* CommonScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonScrollView.m; sourceTree = "<group>"; };
+		57572FEE22DE13E700B9B139 /* CommonLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonLabel.h; sourceTree = "<group>"; };
+		57572FEF22DE13E700B9B139 /* CommonListViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonListViewCell.m; sourceTree = "<group>"; };
+		57572FF022DE13E700B9B139 /* CommonListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommonListView.xib; sourceTree = "<group>"; };
+		57572FF122DE13E700B9B139 /* CommonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonView.h; sourceTree = "<group>"; };
+		57572FF222DE13E700B9B139 /* CommonButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonButton.h; sourceTree = "<group>"; };
+		57572FF322DE13E700B9B139 /* CommonSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonSegmentedControl.m; sourceTree = "<group>"; };
+		57572FF422DE13E700B9B139 /* CommonImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonImageView.m; sourceTree = "<group>"; };
+		57572FF522DE13E700B9B139 /* CommonListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonListView.h; sourceTree = "<group>"; };
+		57572FF622DE13E700B9B139 /* CommonButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommonButton.xib; sourceTree = "<group>"; };
+		57572FF722DE13E700B9B139 /* CommonNavigationBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommonNavigationBar.xib; sourceTree = "<group>"; };
+		57572FF822DE13E700B9B139 /* CommonListViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonListViewCell.h; sourceTree = "<group>"; };
+		57572FF922DE13E700B9B139 /* CommonSegmentedControl.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommonSegmentedControl.xib; sourceTree = "<group>"; };
+		57572FFA22DE13E700B9B139 /* CommonLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonLabel.m; sourceTree = "<group>"; };
+		57572FFB22DE13E700B9B139 /* CommonScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonScrollView.h; sourceTree = "<group>"; };
+		57572FFC22DE13E700B9B139 /* CommonListViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommonListViewCell.xib; sourceTree = "<group>"; };
+		57572FFD22DE13E700B9B139 /* CommonNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonNavigationBar.m; sourceTree = "<group>"; };
+		57572FFE22DE13E700B9B139 /* CommonSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonSegmentedControl.h; sourceTree = "<group>"; };
+		57572FFF22DE13E700B9B139 /* CommonButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonButton.m; sourceTree = "<group>"; };
+		5757300022DE13E700B9B139 /* CommonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonView.m; sourceTree = "<group>"; };
+		5757300122DE13E700B9B139 /* CommonScrollView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommonScrollView.xib; sourceTree = "<group>"; };
+		5757300222DE13E700B9B139 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		5757300422DE13E700B9B139 /* ExpansionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpansionViewController.h; sourceTree = "<group>"; };
+		5757300522DE13E700B9B139 /* ExpansionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpansionViewController.m; sourceTree = "<group>"; };
+		5757300722DE13E700B9B139 /* LinkListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkListViewController.h; sourceTree = "<group>"; };
+		5757300822DE13E700B9B139 /* LinkListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkListViewController.m; sourceTree = "<group>"; };
+		5757300922DE13E700B9B139 /* LinkList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LinkList.plist; sourceTree = "<group>"; };
+		5757300C22DE13E800B9B139 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5757300D22DE13E800B9B139 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		5757300E22DE13E800B9B139 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		5757301022DE13E800B9B139 /* BasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicViewController.m; sourceTree = "<group>"; };
+		5757301122DE13E800B9B139 /* BasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicViewController.h; sourceTree = "<group>"; };
+		5757303D22DE141900B9B139 /* SimpleListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleListViewController.m; sourceTree = "<group>"; };
+		5757303E22DE141900B9B139 /* SimpleListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleListViewController.h; sourceTree = "<group>"; };
 		F65D218822B9CD84005E37CA /* ObjectiveCLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectiveCLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F65D218B22B9CD84005E37CA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F65D218C22B9CD84005E37CA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F65D218E22B9CD84005E37CA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F65D218F22B9CD84005E37CA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		F65D219222B9CD84005E37CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F65D219222B9CD84005E37CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/StartUp.storyboard; sourceTree = "<group>"; };
 		F65D219522B9CD84005E37CA /* ObjectiveCLab.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ObjectiveCLab.xcdatamodel; sourceTree = "<group>"; };
 		F65D219722B9CD87005E37CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F65D219A22B9CD87005E37CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -80,6 +190,337 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5748C37922CFABAB0009981A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				5748C37A22CFABB20009981A /* App */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		5748C37A22CFABB20009981A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5757303C22DE141900B9B139 /* Simple */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		57572FB322DE137C00B9B139 /* app */ = {
+			isa = PBXGroup;
+			children = (
+				5757300F22DE13E800B9B139 /* Basic */,
+				57572FD022DE13E700B9B139 /* Common */,
+				5757300322DE13E700B9B139 /* Expansion */,
+				57572FC822DE13E700B9B139 /* Learn */,
+				5757300622DE13E700B9B139 /* Link */,
+				5757300A22DE13E800B9B139 /* Main */,
+				57572FCC22DE13E700B9B139 /* Setting */,
+				57572FC422DE13E700B9B139 /* Tutorial */,
+			);
+			name = app;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		57572FC422DE13E700B9B139 /* Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				57572FC622DE13E700B9B139 /* TutorialList.plist */,
+				57572FC722DE13E700B9B139 /* TutorialListViewController.h */,
+				57572FC522DE13E700B9B139 /* TutorialListViewController.m */,
+			);
+			name = Tutorial;
+			path = ObjectiveCLab/app/Tutorial;
+			sourceTree = SOURCE_ROOT;
+		};
+		57572FC822DE13E700B9B139 /* Learn */ = {
+			isa = PBXGroup;
+			children = (
+				57572FCA22DE13E700B9B139 /* LearnList.plist */,
+				57572FC922DE13E700B9B139 /* LearnListViewController.h */,
+				57572FCB22DE13E700B9B139 /* LearnListViewController.m */,
+			);
+			name = Learn;
+			path = ObjectiveCLab/app/Learn;
+			sourceTree = SOURCE_ROOT;
+		};
+		57572FCC22DE13E700B9B139 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				57572FCD22DE13E700B9B139 /* SettingListViewController.m */,
+				57572FCE22DE13E700B9B139 /* SettingListViewController.h */,
+				57572FCF22DE13E700B9B139 /* SettingList.plist */,
+			);
+			name = Setting;
+			path = ObjectiveCLab/app/Setting;
+			sourceTree = SOURCE_ROOT;
+		};
+		57572FD022DE13E700B9B139 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				5757300222DE13E700B9B139 /* Common.h */,
+				57572FD122DE13E700B9B139 /* Common.m */,
+				57572FD222DE13E700B9B139 /* MVC */,
+			);
+			name = Common;
+			path = ObjectiveCLab/app/Common;
+			sourceTree = SOURCE_ROOT;
+		};
+		57572FD222DE13E700B9B139 /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				57572FD322DE13E700B9B139 /* Models */,
+				57572FD622DE13E700B9B139 /* Controllers */,
+				57572FE622DE13E700B9B139 /* Views */,
+			);
+			path = MVC;
+			sourceTree = "<group>";
+		};
+		57572FD322DE13E700B9B139 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				57572FD522DE13E700B9B139 /* CommonModel.h */,
+				57572FD422DE13E700B9B139 /* CommonModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		57572FD622DE13E700B9B139 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5757304822DE189000B9B139 /* ViewController */,
+				5757304722DE188200B9B139 /* TabBarController */,
+				5757304622DE187000B9B139 /* NavigationController */,
+				5757304422DE183800B9B139 /* CollectionViewController */,
+				5757304522DE185400B9B139 /* TableViewController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		57572FE622DE13E700B9B139 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5757305122DE194100B9B139 /* SegmentedControl */,
+				5757305022DE192B00B9B139 /* View */,
+				5757304D22DE18EA00B9B139 /* TableViewCell */,
+				5757304C22DE18DC00B9B139 /* TableView */,
+				5757304B22DE18D200B9B139 /* Label */,
+				5757304A22DE18C000B9B139 /* ImageView */,
+				5757304922DE18B200B9B139 /* Button */,
+				5757304E22DE18F800B9B139 /* NavigationBar */,
+				5757304F22DE191200B9B139 /* ScrollView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5757300322DE13E700B9B139 /* Expansion */ = {
+			isa = PBXGroup;
+			children = (
+				5757300422DE13E700B9B139 /* ExpansionViewController.h */,
+				5757300522DE13E700B9B139 /* ExpansionViewController.m */,
+			);
+			name = Expansion;
+			path = ObjectiveCLab/app/Expansion;
+			sourceTree = SOURCE_ROOT;
+		};
+		5757300622DE13E700B9B139 /* Link */ = {
+			isa = PBXGroup;
+			children = (
+				5757300922DE13E700B9B139 /* LinkList.plist */,
+				5757300722DE13E700B9B139 /* LinkListViewController.h */,
+				5757300822DE13E700B9B139 /* LinkListViewController.m */,
+			);
+			name = Link;
+			path = ObjectiveCLab/app/Link;
+			sourceTree = SOURCE_ROOT;
+		};
+		5757300A22DE13E800B9B139 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F65D218B22B9CD84005E37CA /* AppDelegate.h */,
+				F65D218C22B9CD84005E37CA /* AppDelegate.m */,
+				F65D219922B9CD87005E37CA /* LaunchScreen.storyboard */,
+				5748C37C22CFACE50009981A /* LaunchScreenViewController.h */,
+				5748C37D22CFACE50009981A /* LaunchScreenViewController.m */,
+				5757300B22DE13E800B9B139 /* Main.storyboard */,
+				5757300E22DE13E800B9B139 /* MainViewController.h */,
+				5757300D22DE13E800B9B139 /* MainViewController.m */,
+				F65D219122B9CD84005E37CA /* StartUp.storyboard */,
+			);
+			name = Main;
+			path = ObjectiveCLab/app/Main;
+			sourceTree = SOURCE_ROOT;
+		};
+		5757300F22DE13E800B9B139 /* Basic */ = {
+			isa = PBXGroup;
+			children = (
+				5757301122DE13E800B9B139 /* BasicViewController.h */,
+				5757301022DE13E800B9B139 /* BasicViewController.m */,
+			);
+			name = Basic;
+			path = ObjectiveCLab/app/Basic;
+			sourceTree = SOURCE_ROOT;
+		};
+		5757303C22DE141900B9B139 /* Simple */ = {
+			isa = PBXGroup;
+			children = (
+				5757303D22DE141900B9B139 /* SimpleListViewController.m */,
+				5757303E22DE141900B9B139 /* SimpleListViewController.h */,
+			);
+			path = Simple;
+			sourceTree = "<group>";
+		};
+		5757304022DE144B00B9B139 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F65D219C22B9CD87005E37CA /* Info.plist */,
+				F65D219D22B9CD87005E37CA /* main.m */,
+				F65D219722B9CD87005E37CA /* Assets.xcassets */,
+				F65D219422B9CD84005E37CA /* ObjectiveCLab.xcdatamodeld */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5757304422DE183800B9B139 /* CollectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				57572FD722DE13E700B9B139 /* CommonCollectionViewController.h */,
+				57572FDF22DE13E700B9B139 /* CommonCollectionViewController.m */,
+				57572FD822DE13E700B9B139 /* CommonCollectionViewController.xib */,
+			);
+			path = CollectionViewController;
+			sourceTree = "<group>";
+		};
+		5757304522DE185400B9B139 /* TableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				57572FE222DE13E700B9B139 /* CommonListViewController.h */,
+				57572FDB22DE13E700B9B139 /* CommonListViewController.m */,
+				57572FE322DE13E700B9B139 /* CommonListViewController.xib */,
+			);
+			path = TableViewController;
+			sourceTree = "<group>";
+		};
+		5757304622DE187000B9B139 /* NavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				57572FE522DE13E700B9B139 /* CommonNavigationController.h */,
+				57572FDD22DE13E700B9B139 /* CommonNavigationController.m */,
+				57572FE022DE13E700B9B139 /* CommonNavigationController.xib */,
+			);
+			path = NavigationController;
+			sourceTree = "<group>";
+		};
+		5757304722DE188200B9B139 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				57572FE422DE13E700B9B139 /* CommonTabBarController.h */,
+				57572FDE22DE13E700B9B139 /* CommonTabBarController.m */,
+				57572FDC22DE13E700B9B139 /* CommonTabBarController.xib */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		5757304822DE189000B9B139 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				57572FE122DE13E700B9B139 /* CommonViewController.h */,
+				57572FDA22DE13E700B9B139 /* CommonViewController.m */,
+				57572FD922DE13E700B9B139 /* CommonViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		5757304922DE18B200B9B139 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				57572FF222DE13E700B9B139 /* CommonButton.h */,
+				57572FFF22DE13E700B9B139 /* CommonButton.m */,
+				57572FF622DE13E700B9B139 /* CommonButton.xib */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		5757304A22DE18C000B9B139 /* ImageView */ = {
+			isa = PBXGroup;
+			children = (
+				57572FE822DE13E700B9B139 /* CommonImageView.h */,
+				57572FF422DE13E700B9B139 /* CommonImageView.m */,
+				57572FEC22DE13E700B9B139 /* CommonImageView.xib */,
+			);
+			path = ImageView;
+			sourceTree = "<group>";
+		};
+		5757304B22DE18D200B9B139 /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				57572FEE22DE13E700B9B139 /* CommonLabel.h */,
+				57572FFA22DE13E700B9B139 /* CommonLabel.m */,
+				57572FE922DE13E700B9B139 /* CommonLabel.xib */,
+			);
+			path = Label;
+			sourceTree = "<group>";
+		};
+		5757304C22DE18DC00B9B139 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				57572FF522DE13E700B9B139 /* CommonListView.h */,
+				57572FEA22DE13E700B9B139 /* CommonListView.m */,
+				57572FF022DE13E700B9B139 /* CommonListView.xib */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		5757304D22DE18EA00B9B139 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				57572FF822DE13E700B9B139 /* CommonListViewCell.h */,
+				57572FEF22DE13E700B9B139 /* CommonListViewCell.m */,
+				57572FFC22DE13E700B9B139 /* CommonListViewCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		5757304E22DE18F800B9B139 /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				57572FEB22DE13E700B9B139 /* CommonNavigationBar.h */,
+				57572FFD22DE13E700B9B139 /* CommonNavigationBar.m */,
+				57572FF722DE13E700B9B139 /* CommonNavigationBar.xib */,
+			);
+			path = NavigationBar;
+			sourceTree = "<group>";
+		};
+		5757304F22DE191200B9B139 /* ScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				57572FFB22DE13E700B9B139 /* CommonScrollView.h */,
+				57572FED22DE13E700B9B139 /* CommonScrollView.m */,
+				5757300122DE13E700B9B139 /* CommonScrollView.xib */,
+			);
+			path = ScrollView;
+			sourceTree = "<group>";
+		};
+		5757305022DE192B00B9B139 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				57572FF122DE13E700B9B139 /* CommonView.h */,
+				5757300022DE13E700B9B139 /* CommonView.m */,
+				57572FE722DE13E700B9B139 /* CommonView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5757305122DE194100B9B139 /* SegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				57572FFE22DE13E700B9B139 /* CommonSegmentedControl.h */,
+				57572FF322DE13E700B9B139 /* CommonSegmentedControl.m */,
+				57572FF922DE13E700B9B139 /* CommonSegmentedControl.xib */,
+			);
+			path = SegmentedControl;
+			sourceTree = "<group>";
+		};
 		F65D217F22B9CD84005E37CA = {
 			isa = PBXGroup;
 			children = (
@@ -103,17 +544,9 @@
 		F65D218A22B9CD84005E37CA /* ObjectiveCLab */ = {
 			isa = PBXGroup;
 			children = (
-				F65D21C022B9CE48005E37CA /* Base */,
-				F65D218B22B9CD84005E37CA /* AppDelegate.h */,
-				F65D218C22B9CD84005E37CA /* AppDelegate.m */,
-				F65D218E22B9CD84005E37CA /* ViewController.h */,
-				F65D218F22B9CD84005E37CA /* ViewController.m */,
-				F65D219122B9CD84005E37CA /* Main.storyboard */,
-				F65D219722B9CD87005E37CA /* Assets.xcassets */,
-				F65D219922B9CD87005E37CA /* LaunchScreen.storyboard */,
-				F65D219C22B9CD87005E37CA /* Info.plist */,
-				F65D219D22B9CD87005E37CA /* main.m */,
-				F65D219422B9CD84005E37CA /* ObjectiveCLab.xcdatamodeld */,
+				57572FB322DE137C00B9B139 /* app */,
+				5757304022DE144B00B9B139 /* Resources */,
+				5748C37922CFABAB0009981A /* Base */,
 			);
 			path = ObjectiveCLab;
 			sourceTree = "<group>";
@@ -134,21 +567,6 @@
 				F65D21B422B9CD87005E37CA /* Info.plist */,
 			);
 			path = ObjectiveCLabUITests;
-			sourceTree = "<group>";
-		};
-		F65D21C022B9CE48005E37CA /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				F65D21C122B9CE52005E37CA /* App */,
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
-		F65D21C122B9CE52005E37CA /* App */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,9 +672,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5757301322DE13E800B9B139 /* TutorialList.plist in Resources */,
+				5757301B22DE13E800B9B139 /* CommonViewController.xib in Resources */,
 				F65D219B22B9CD87005E37CA /* LaunchScreen.storyboard in Resources */,
+				5757302F22DE13E800B9B139 /* CommonSegmentedControl.xib in Resources */,
 				F65D219822B9CD87005E37CA /* Assets.xcassets in Resources */,
-				F65D219322B9CD84005E37CA /* Main.storyboard in Resources */,
+				5757303922DE13E800B9B139 /* Main.storyboard in Resources */,
+				5757301A22DE13E800B9B139 /* CommonCollectionViewController.xib in Resources */,
+				5757301E22DE13E800B9B139 /* CommonTabBarController.xib in Resources */,
+				5757302D22DE13E800B9B139 /* CommonButton.xib in Resources */,
+				5757303522DE13E800B9B139 /* CommonScrollView.xib in Resources */,
+				5757303122DE13E800B9B139 /* CommonListViewCell.xib in Resources */,
+				5757302222DE13E800B9B139 /* CommonNavigationController.xib in Resources */,
+				5757301422DE13E800B9B139 /* LearnList.plist in Resources */,
+				5757302522DE13E800B9B139 /* CommonLabel.xib in Resources */,
+				F65D219322B9CD84005E37CA /* StartUp.storyboard in Resources */,
+				5757301722DE13E800B9B139 /* SettingList.plist in Resources */,
+				5757302E22DE13E800B9B139 /* CommonNavigationBar.xib in Resources */,
+				5757302322DE13E800B9B139 /* CommonListViewController.xib in Resources */,
+				5757302422DE13E800B9B139 /* CommonView.xib in Resources */,
+				5757303822DE13E800B9B139 /* LinkList.plist in Resources */,
+				5757302A22DE13E800B9B139 /* CommonListView.xib in Resources */,
+				5757302722DE13E800B9B139 /* CommonImageView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,10 +718,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F65D219022B9CD84005E37CA /* ViewController.m in Sources */,
+				5757302022DE13E800B9B139 /* CommonTabBarController.m in Sources */,
+				5757301222DE13E800B9B139 /* TutorialListViewController.m in Sources */,
+				5748C37E22CFACE50009981A /* LaunchScreenViewController.m in Sources */,
+				5757302922DE13E800B9B139 /* CommonListViewCell.m in Sources */,
+				5757301522DE13E800B9B139 /* LearnListViewController.m in Sources */,
+				5757303322DE13E800B9B139 /* CommonButton.m in Sources */,
+				5757301C22DE13E800B9B139 /* CommonViewController.m in Sources */,
+				5757301922DE13E800B9B139 /* CommonModel.m in Sources */,
+				5757303F22DE141A00B9B139 /* SimpleListViewController.m in Sources */,
+				5757303222DE13E800B9B139 /* CommonNavigationBar.m in Sources */,
 				F65D218D22B9CD84005E37CA /* AppDelegate.m in Sources */,
+				5757302122DE13E800B9B139 /* CommonCollectionViewController.m in Sources */,
+				5757303022DE13E800B9B139 /* CommonLabel.m in Sources */,
+				5757303A22DE13E800B9B139 /* MainViewController.m in Sources */,
 				F65D219E22B9CD87005E37CA /* main.m in Sources */,
+				5757302822DE13E800B9B139 /* CommonScrollView.m in Sources */,
+				5757302B22DE13E800B9B139 /* CommonSegmentedControl.m in Sources */,
+				5757303722DE13E800B9B139 /* LinkListViewController.m in Sources */,
+				5757301822DE13E800B9B139 /* Common.m in Sources */,
+				5757302622DE13E800B9B139 /* CommonListView.m in Sources */,
+				5757302C22DE13E800B9B139 /* CommonImageView.m in Sources */,
+				5757303622DE13E800B9B139 /* ExpansionViewController.m in Sources */,
+				5757303422DE13E800B9B139 /* CommonView.m in Sources */,
+				5757301D22DE13E800B9B139 /* CommonListViewController.m in Sources */,
+				5757301F22DE13E800B9B139 /* CommonNavigationController.m in Sources */,
+				5757303B22DE13E800B9B139 /* BasicViewController.m in Sources */,
 				F65D219622B9CD84005E37CA /* ObjectiveCLab.xcdatamodeld in Sources */,
+				5757301622DE13E800B9B139 /* SettingListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,12 +781,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F65D219122B9CD84005E37CA /* Main.storyboard */ = {
+		5757300B22DE13E800B9B139 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5757300C22DE13E800B9B139 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F65D219122B9CD84005E37CA /* StartUp.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				F65D219222B9CD84005E37CA /* Base */,
 			);
-			name = Main.storyboard;
+			name = StartUp.storyboard;
 			sourceTree = "<group>";
 		};
 		F65D219922B9CD87005E37CA /* LaunchScreen.storyboard */ = {
@@ -455,9 +924,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EXZY2926Q2;
-				INFOPLIST_FILE = ObjectiveCLab/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ObjectiveCLab/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -472,9 +943,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EXZY2926Q2;
-				INFOPLIST_FILE = ObjectiveCLab/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ObjectiveCLab/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
